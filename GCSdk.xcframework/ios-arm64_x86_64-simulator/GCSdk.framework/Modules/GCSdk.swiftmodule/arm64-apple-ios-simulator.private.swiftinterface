@@ -1,0 +1,23 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios17.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GCSdk
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class GoCanvasFormLauncher {
+  public init()
+  @_Concurrency.MainActor public func launchForm(withJSONinput input: Swift.String, inNavigationController navigationController: UIKit.UINavigationController, completion: @escaping (Swift.String) -> ()) async throws
+  @objc deinit
+}
+public enum FormLauncherError : Swift.Error {
+  case invalidJson(userInfo: [Swift.String : Any], description: Swift.String)
+  case missingData(description: Swift.String)
+  case resumeFormFailed(description: Swift.String)
+  case unknown(error: Foundation.NSError)
+  public var message: Swift.String {
+    get
+  }
+}
