@@ -1,0 +1,116 @@
+name: GoCanvas SDK Package Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      packageVersion:
+        description: 'The package version to publish'
+        required: true
+      branch:
+        description: 'The branch where new release will be uploaded'
+        default: 'master'
+
+
+permissions:
+  contents: write
+
+jobs:
+  release-package:
+
+    runs-on: macos-15
+
+    steps:
+      - name: Generate GitHub App Token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: |
+            ios_sdk
+            mobile_sdk_ios
+
+      - name: Checkout Repository 2
+        uses: actions/checkout@v3
+        
+      - name: Add Repository 1
+        run: |
+          git clone https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/gocanvas/ios_sdk.git temp_ios_sdk
+          cd temp_ios_sdk
+          git fetch --tags
+          git checkout tags/release/${{ github.event.inputs.packageVersion }}
+          
+      - name: Create xcconfig
+        working-directory: temp_ios_sdk
+        run: |
+          echo "DB_PASSWORD_CONFIG = ${{ secrets.DB_PASSWORD_CONFIG }}" > GCInternalSDK/GCInternalSDK/Main/GCConfig.xcconfig
+          if [ -e "GCInternalSDK/GCInternalSDK/Main/GCConfig.xcconfig" ]; then
+              echo "Config file present"
+           else
+              echo "Config file not present"
+           fi
+        
+      - name: Clear Derived Data
+        run: |
+          rm -rf ~/Library/Developer/Xcode/DerivedData
+        
+      - name: Clear SPM
+        run: |
+          cd temp_ios_sdk/qasampleapp
+          rm -f qasampleapp.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+          
+      - name: Build and prepare artifacts
+        working-directory: temp_ios_sdk
+        run: |
+          mkdir -p $GITHUB_WORKSPACE/build
+          
+          xcodebuild archive -project "qasampleapp/qasampleapp.xcodeproj" -scheme GCSdk -destination "generic/platform=iOS" -archivePath "$GITHUB_WORKSPACE/build/iphone-archive" SKIP_INSTALL=NO
+
+          xcodebuild archive -project "qasampleapp/qasampleapp.xcodeproj" -scheme GCSdk -destination "generic/platform=iOS Simulator" -archivePath "$GITHUB_WORKSPACE/build/iphone-simulator-archive" SKIP_INSTALL=NO
+
+          xcodebuild -create-xcframework -archive "$GITHUB_WORKSPACE/build/iphone-simulator-archive.xcarchive" -framework GCSdk.framework -archive "$GITHUB_WORKSPACE/build/iphone-archive.xcarchive" -framework GCSdk.framework -output "$GITHUB_WORKSPACE/build/framework/GCSdk.xcframework"
+      
+      - name: Create or checkout branch and commit file
+        run: |
+          BRANCH_NAME="${{ github.event.inputs.branch }}"
+          FILE_PATH="GCSdk.xcframework"
+
+          if git show-ref --quiet refs/heads/$BRANCH_NAME; then
+            echo "Branch '$BRANCH_NAME' exists. Checking it out."
+            git checkout $BRANCH_NAME
+          else
+            echo "Branch '$BRANCH_NAME' does not exist. Creating new branch."
+            git checkout -b $BRANCH_NAME
+          fi
+
+          git fetch origin $BRANCH_NAME
+          git pull --rebase --autostash origin $BRANCH_NAME
+          
+          mv $GITHUB_WORKSPACE/build/framework/GCSdk.xcframework .
+          git add $FILE_PATH
+          git commit -m "Github Release ${{ github.event.inputs.packageVersion }}"
+          git push origin $BRANCH_NAME
+
+          git fetch origin $BRANCH_NAME
+          git pull --rebase --autostash origin $BRANCH_NAME
+          
+      - name: Cleanup
+        run: |
+          rm -rf temp_ios_sdk
+          rm -rf $GITHUB_WORKSPACE/build
+
+      - name: Trigger workflow in Repository 2
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'gocanvas',
+              repo: 'mobile_sdk_ios',
+              workflow_id: 'cg_sdk_release.yml',
+              ref: 'master',
+              inputs: {
+                packageVersion: '${{ github.event.inputs.packageVersion }}'
+              }
+            })

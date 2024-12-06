@@ -1,0 +1,41 @@
+name: GoCanvas SDK Package Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      packageVersion:
+        description: 'The package version to publish'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release-package:
+
+    runs-on: macos-15
+
+    steps:
+      - name: Generate GitHub App Token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: |
+            mobile_sdk_ios
+
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+          
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.event.inputs.packageVersion }}
+          release_name: Release ${{ github.event.inputs.packageVersion }}
+          draft: false
+          prerelease: false
