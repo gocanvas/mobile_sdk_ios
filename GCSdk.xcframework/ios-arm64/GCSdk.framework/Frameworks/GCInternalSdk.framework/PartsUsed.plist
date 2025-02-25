@@ -1,0 +1,1011 @@
+bplist00Ò^FormDefinition]PDFDefinition_Ï<?xml version="1.0" encoding="UTF-8"?>
+            <Form ID="611973" Name="Parts Used" Version="1" ImageID="" AllowEmail="2" Username="diego_builder@gocanvas.com" Status="published" ShowMenu="0"  MobileBuilderEnabled="false"  RemRecall="1" Editable="3" ParentID="611973" WorkflowId="" CompressionQuality="80" CompressionDimension="800">
+            <Section ID="5833802" Name="Parts Used" Type="0">
+            <Sheet ID="6008124" Name="Parts Used" Type="3" MultiSec="5833803" AllowDuplicate="false" DisplayEntryID="" Style="1">
+            <Entry ID="40652309" Label="Description of Part" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "B6CFE235DB2A885D97FBE04A1D2EFA4712B47BEC">
+            </Entry>
+            </Sheet>
+            </Section>
+            <Section ID="5833803" Name="Parts Used (Detail)" Type="1">
+            <Sheet ID="6008125" Name="Part Information" Type="1" MultiSec="-1" AllowDuplicate="false" DisplayEntryID="" Style="0">
+            <Entry ID="40652310" Label="Part Number" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "141A1C896B1D3DB1423E3965743A05501CBAA7AB">
+            </Entry>
+            <Entry ID="40652311" Label="Quantity" Length="" Min="" Max="" Default="" Required="false" Type="1" ReceiptLabel="" Mask="0" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "435074F59134A1A855308EC5C636323865246E18">
+            </Entry>
+            <Entry ID="40652312" Label="Cost" Length="" Min="" Max="" Default="" Required="false" Type="2" ReceiptLabel="" Mask="2" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="4" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "D7800F3DC59381DFE839DE019E6FA17C2DFCDDBB">
+            </Entry>
+            <Entry ID="40652313" Label="Part Total" Length="" Min="" Max="" Default="" Required="false" Type="21" ReceiptLabel="" Mask="2" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="4" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "5FA452C7F9C8EBBFEC1110E9FA8CE776CD371C74">
+            <Operator EntryId="40652311" Value="" OperationId="0"/>
+            <Operator EntryId="40652312" Value="" OperationId="3"/>
+            </Entry>
+            </Sheet>
+            </Section>
+            <Departments>
+
+            </Departments>
+            <Folders>
+            </Folders>
+            </Form>
+        _h	{
+            "id": 6747,
+            "form_id": 611973,
+            "orientation": "Portrait",
+            "creator_id": 3478,
+            "size": "us-letter",
+            "top_margin": 2,
+            "right_margin": 2,
+            "left_margin": 2,
+            "bottom_margin": 2,
+            "components": {
+            "pages": [{
+            "type": "PdfTemplatePage",
+            "page_number": 1,
+            "sections": [{
+            "id": 140913,
+            "width": 100,
+            "selected": false,
+            "columns": [{
+            "id": 293468,
+            "style": {
+            "width": 100
+            },
+            "resized": false,
+            "modified": false,
+            "width_lended": 0,
+            "fields": [{
+            "entry_type_id": 9998,
+            "text": "Parts Used",
+            "value": {
+            "type": "table",
+            "entry_guid": "B6CFE235DB2A885D97FBE04A1D2EFA4712B47BEC",
+            "columns": [{
+            "headerText": "Description of Part",
+            "values": [{
+            "entry_type_id": 0,
+            "text": "Description of Part",
+            "entry_guid": "B6CFE235DB2A885D97FBE04A1D2EFA4712B47BEC",
+            "entry_id": 40652309,
+            "properties": {
+            "useGlobalProperty": false,
+            "globalStyle": {
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            },
+            "column": {
+            "padding": {
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8"
+            },
+            "borders": {
+            "direction": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "color": "#000000",
+            "style": "solid",
+            "width": "1"
+            },
+            "bg_color": "#ffffff"
+            },
+            "fields": {
+            "borders": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "show_label": false,
+            "line_height": "143%"
+            },
+            "table": {
+            "header": {
+            "useGlobalProperty": true,
+            "bg_color": "#6f7e91",
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "text_align": "center",
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            },
+            "rows": {
+            "useGlobalProperty": true,
+            "bg_color": "#ffffff",
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "text_align": "left",
+            "override_alignment": false,
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            }
+            }
+            }
+            }
+            }],
+            "width": 183.2,
+            "resized": true
+            }, {
+            "headerText": "Part Number",
+            "values": [{
+            "entry_type_id": 0,
+            "text": "Part Number",
+            "entry_guid": "141A1C896B1D3DB1423E3965743A05501CBAA7AB",
+            "entry_id": 40652310,
+            "properties": {
+            "useGlobalProperty": false,
+            "globalStyle": {
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            },
+            "column": {
+            "padding": {
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8"
+            },
+            "borders": {
+            "direction": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "color": "#000000",
+            "style": "solid",
+            "width": "1"
+            },
+            "bg_color": "#ffffff"
+            },
+            "fields": {
+            "borders": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "show_label": false,
+            "line_height": "143%"
+            },
+            "table": {
+            "header": {
+            "useGlobalProperty": true,
+            "bg_color": "#6f7e91",
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "text_align": "center",
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            },
+            "rows": {
+            "useGlobalProperty": true,
+            "bg_color": "#ffffff",
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "text_align": "left",
+            "override_alignment": false,
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            }
+            }
+            }
+            }
+            }],
+            "width": 181.2,
+            "resized": true
+            }, {
+            "headerText": "Quantity",
+            "values": [{
+            "entry_type_id": 1,
+            "text": "Quantity",
+            "entry_guid": "435074F59134A1A855308EC5C636323865246E18",
+            "entry_id": 40652311,
+            "properties": {
+            "useGlobalProperty": false,
+            "globalStyle": {
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            },
+            "column": {
+            "padding": {
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8"
+            },
+            "borders": {
+            "direction": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "color": "#000000",
+            "style": "solid",
+            "width": "1"
+            },
+            "bg_color": "#ffffff"
+            },
+            "fields": {
+            "borders": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "show_label": false,
+            "line_height": "143%"
+            },
+            "table": {
+            "header": {
+            "useGlobalProperty": true,
+            "bg_color": "#6f7e91",
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "text_align": "center",
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            },
+            "rows": {
+            "useGlobalProperty": true,
+            "bg_color": "#ffffff",
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "text_align": "left",
+            "override_alignment": false,
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            }
+            }
+            }
+            }
+            }],
+            "width": 61.19999999999999,
+            "resized": true
+            }, {
+            "headerText": "Cost",
+            "values": [{
+            "entry_type_id": 2,
+            "text": "Cost",
+            "entry_guid": "D7800F3DC59381DFE839DE019E6FA17C2DFCDDBB",
+            "entry_id": 40652312,
+            "properties": {
+            "useGlobalProperty": false,
+            "globalStyle": {
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            },
+            "column": {
+            "padding": {
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8"
+            },
+            "borders": {
+            "direction": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "color": "#000000",
+            "style": "solid",
+            "width": "1"
+            },
+            "bg_color": "#ffffff"
+            },
+            "fields": {
+            "borders": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "show_label": false,
+            "line_height": "143%"
+            },
+            "table": {
+            "header": {
+            "useGlobalProperty": true,
+            "bg_color": "#6f7e91",
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "text_align": "center",
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            },
+            "rows": {
+            "useGlobalProperty": true,
+            "bg_color": "#ffffff",
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "text_align": "left",
+            "override_alignment": false,
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            }
+            }
+            }
+            }
+            }],
+            "width": 81.19999999999999,
+            "resized": true
+            }, {
+            "headerText": "Part Total",
+            "values": [{
+            "entry_type_id": 21,
+            "text": "Part Total",
+            "entry_guid": "5FA452C7F9C8EBBFEC1110E9FA8CE776CD371C74",
+            "entry_id": 40652313,
+            "properties": {
+            "useGlobalProperty": false,
+            "globalStyle": {
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            },
+            "column": {
+            "padding": {
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8"
+            },
+            "borders": {
+            "direction": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "color": "#000000",
+            "style": "solid",
+            "width": "1"
+            },
+            "bg_color": "#ffffff"
+            },
+            "fields": {
+            "borders": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "show_label": false,
+            "line_height": "143%"
+            },
+            "table": {
+            "header": {
+            "useGlobalProperty": true,
+            "bg_color": "#6f7e91",
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "text_align": "center",
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            },
+            "rows": {
+            "useGlobalProperty": true,
+            "bg_color": "#ffffff",
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "text_align": "left",
+            "override_alignment": false,
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            }
+            }
+            }
+            }
+            }],
+            "width": 89.2
+            }],
+            "properties": {
+            "response_groups": true
+            }
+            },
+            "entry_guid": null,
+            "properties": {
+            "globalStyle": {
+            "table": {
+            "rows": {
+            "useGlobalProperty": true,
+            "bg_color": "#ffffff",
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "text_align": "left",
+            "override_alignment": false,
+            "general": {
+            "font_family": "Arial",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            },
+            "header": {
+            "useGlobalProperty": true,
+            "bg_color": "#6f7e91",
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "text_align": "left",
+            "general": {
+            "font_family": "Arial",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            }
+            }
+            }
+            }
+            }]
+            }],
+            "properties": {
+            "list": true
+            }
+            }]
+            }],
+            "headers": [{
+            "type": "PdfTemplateHeader",
+            "page_number": null,
+            "sections": [{
+            "id": 140912,
+            "width": 100,
+            "selected": false,
+            "columns": [{
+            "id": 293465,
+            "style": {
+            "width": 18.97,
+            "padding": {
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8"
+            },
+            "borders": {
+            "direction": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "color": "#000000",
+            "style": "solid",
+            "width": "1"
+            }
+            },
+            "resized": false,
+            "modified": false,
+            "width_lended": 0,
+            "fields": [{
+            "id": 1140062,
+            "entry_type_id": 9997,
+            "text": null,
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+            "useGlobalProperty": true,
+            "globalStyle": {
+            "general": {
+            "font_family": "Arial",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            },
+            "fields": {
+            "borders": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "show_label": true,
+            "line_height": "143%"
+            }
+            },
+            "localStyle": {}
+            }
+            }]
+            }, {
+            "id": 293466,
+            "style": {
+            "width": 62.06,
+            "padding": {
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8"
+            },
+            "borders": {
+            "direction": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "color": "#000000",
+            "style": "solid",
+            "width": "1"
+            }
+            },
+            "resized": false,
+            "modified": false,
+            "width_lended": 0,
+            "fields": [{
+            "id": 1140063,
+            "entry_type_id": 9999,
+            "text": "Company Name<div>Address</div><div>City, State 12345</div>",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+            "useGlobalProperty": false,
+            "globalStyle": {
+            "general": {
+            "font_family": "Helvetica",
+            "text_color": "#000000",
+            "text_size": "14",
+            "vertical_spacing": "1"
+            },
+            "fields": {
+            "borders": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "show_label": true,
+            "line_height": "143%"
+            }
+            },
+            "localStyle": {
+            "text_align": "center"
+            },
+            "link": ""
+            }
+            }]
+            }, {
+            "id": 293467,
+            "style": {
+            "width": 18.97,
+            "padding": {
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8"
+            },
+            "borders": {
+            "direction": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "color": "#000000",
+            "style": "solid",
+            "width": "1"
+            }
+            },
+            "resized": false,
+            "modified": false,
+            "width_lended": 0,
+            "fields": [{
+            "id": 1140064,
+            "entry_type_id": 9999,
+            "text": "Parts Used",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+            "useGlobalProperty": true,
+            "globalStyle": {
+            "general": {
+            "font_family": "Arial",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            },
+            "fields": {
+            "borders": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "show_label": true,
+            "line_height": "143%"
+            }
+            },
+            "localStyle": {
+            "font_weight": "bold",
+            "text_align": "right"
+            },
+            "link": ""
+            }
+            }, {
+            "id": 1140065,
+            "entry_type_id": 9995,
+            "text": "No.",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+            "useGlobalProperty": true,
+            "globalStyle": {
+            "general": {
+            "font_family": "Arial",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            },
+            "fields": {
+            "borders": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "show_label": true,
+            "line_height": "143%"
+            }
+            },
+            "localStyle": {
+            "font_weight": "normal",
+            "text_align": "right"
+            }
+            }
+            }]
+            }],
+            "properties": {
+            "height": "1.25"
+            }
+            }],
+            "default_data": {
+            "logo_url": "/company_images/2062",
+            "app_name": "Parts Used",
+            "header_info": "GoCanvas\n\n"
+            }
+            }],
+            "footers": [{
+            "type": "PdfTemplateFooter",
+            "page_number": null,
+            "sections": [{
+            "id": 140914,
+            "width": 100,
+            "selected": false,
+            "columns": [{
+            "id": 293469,
+            "style": {
+            "width": 100,
+            "padding": {
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8"
+            },
+            "borders": {
+            "direction": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "color": "#000000",
+            "style": "solid",
+            "width": "1"
+            }
+            },
+            "resized": false,
+            "modified": false,
+            "width_lended": 0,
+            "fields": [{
+            "id": 1140086,
+            "entry_type_id": 9996,
+            "text": "",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+            "useGlobalProperty": true,
+            "globalStyle": {
+            "general": {
+            "font_family": "Arial",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            },
+            "fields": {
+            "borders": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "show_label": true,
+            "line_height": "143%"
+            }
+            },
+            "localStyle": {
+            "bg_color": "#ffffff",
+            "font_style": "normal",
+            "font_weight": "normal",
+            "text_decoration": "none",
+            "text_align": "right"
+            },
+            "links": [{
+            "name": "Facebook",
+            "placeholder": "Enter Facebook URL",
+            "url": "https://www.facebook.com/pages/Canvas/247055383245?ref=mf",
+            "isSelected": false
+            }, {
+            "name": "Twitter",
+            "placeholder": "Enter Twitter Handle",
+            "url": "https://twitter.com/GoCanvas",
+            "isSelected": false
+            }, {
+            "name": "LinkedIn",
+            "placeholder": "Enter LinkedIn URL",
+            "url": "https://www.linkedin.com/company/canvas",
+            "isSelected": false
+            }, {
+            "name": "Angie's List",
+            "placeholder": "Enter Angie's List URL",
+            "url": "https://www.angieslist.com/",
+            "isSelected": false
+            }, {
+            "name": "Google Reviews",
+            "placeholder": "Enter Google Reviews URL",
+            "url": "https://www.google.com/",
+            "isSelected": false
+            }, {
+            "name": "Home Advisor",
+            "placeholder": "Enter Home Advisor URL",
+            "url": "http://www.homeadvisor.com/",
+            "isSelected": false
+            }, {
+            "name": "Yelp",
+            "placeholder": "Enter Yelp URL",
+            "url": "https://www.yelp.com/",
+            "isSelected": false
+            }]
+            }
+            }]
+            }],
+            "properties": {}
+            }]
+            }]
+            },
+            "global_properties": {
+            "general": {
+            "font_family": "Arial",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            },
+            "column": {
+            "padding": {
+            "top": "8",
+            "right": "8",
+            "bottom": "8",
+            "left": "8"
+            },
+            "borders": {
+            "direction": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "color": "#000000",
+            "style": "solid",
+            "width": "1"
+            },
+            "bg_color": "#ffffff"
+            },
+            "fields": {
+            "borders": {
+            "left": false,
+            "top": false,
+            "right": false,
+            "bottom": false
+            },
+            "show_label": true,
+            "line_height": "143%"
+            },
+            "table": {
+            "header": {
+            "useGlobalProperty": true,
+            "bg_color": "#6f7e91",
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "text_align": "left",
+            "general": {
+            "font_family": "Arial",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            },
+            "rows": {
+            "useGlobalProperty": true,
+            "bg_color": "#ffffff",
+            "padding": {
+            "left": "2",
+            "right": "2"
+            },
+            "borders": {
+            "left": true,
+            "top": true,
+            "right": true,
+            "bottom": true
+            },
+            "text_align": "left",
+            "override_alignment": false,
+            "general": {
+            "font_family": "Arial",
+            "text_color": "#000000",
+            "text_size": "12",
+            "vertical_spacing": "1"
+            }
+            }
+            }
+            }
+            }    *ý                           t
