@@ -84,6 +84,34 @@ public struct GCSdkFormConfig {
 }
 ```
 
+##### Prefilled Entries scope
+Acts as support for prefilling the form's entries by passing a list of responses.
+
+1. Prefill all entries based on labels:
+```json
+{
+  "responses": [
+    {
+      "value": "Example Value",
+      "label": "Example Label"
+    }
+  ]
+}
+```
+
+2. Prefill only specific entries based on form's entry id:
+```json
+{
+  "responses": [
+    {
+      "entry_id": 123456,
+      "value": "Example Value",
+      "label": "Example Label"
+    }
+  ]
+}
+```
+
 #### Retrieving special messages from the SDK
 
 Through the MessagingDelegate, the SDK will request a specific action from the parent app.
