@@ -1,0 +1,705 @@
+bplist00Ò^FormDefinition]PDFDefinition_I<?xml version="1.0" encoding="UTF-8"?>
+<Form ID="611970" Name="Field Observation" Version="1" ImageID="" AllowEmail="2" Username="diego_builder@gocanvas.com" Status="published" ShowMenu="0"  MobileBuilderEnabled="false"  RemRecall="1" Editable="3" ParentID="611970" WorkflowId="" CompressionQuality="80" CompressionDimension="800">
+  <Section ID="5833798" Name="Field Observation" Type="0">
+    <Sheet ID="6008120" Name="Field Observation" Type="1" MultiSec="-1" AllowDuplicate="false" DisplayEntryID="" Style="0">
+      <Entry ID="40652295" Label="Enter Your Observation" Length="" Min="" Max="" Default="" Required="false" Type="8" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "808BBABF376EF1027B688793B5996AB982C115ED">
+      </Entry>
+      <Entry ID="40652296" Label="Notes" Length="" Min="" Max="" Default="" Required="false" Type="8" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "9073283DDC5A6BA37613A30FBE830089C453FCC7">
+      </Entry>
+      <Entry ID="40652297" Label="Image 01" Length="" Min="" Max="" Default="" Required="false" Type="10" ReceiptLabel="" Mask="00" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "327DDB286CA81901029A2CA22D680682220E4FE0">
+      </Entry>
+      <Entry ID="40652298" Label="Image 02" Length="" Min="" Max="" Default="" Required="false" Type="10" ReceiptLabel="" Mask="00" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "59A6138C270554663037A85F4ADC4FB233F5DEB3">
+      </Entry>
+    </Sheet>
+  </Section>
+  <Departments>
+    
+  </Departments>
+  <Folders>
+  </Folders>
+</Form>
+_?{
+	"id": 6744,
+	"form_id": 611970,
+	"orientation": "Portrait",
+	"creator_id": 3478,
+	"size": "us-letter",
+	"top_margin": 2,
+	"right_margin": 2,
+	"left_margin": 2,
+	"bottom_margin": 2,
+	"components": {
+		"pages": [
+			{
+				"type": "PdfTemplatePage",
+				"page_number": 1,
+				"sections": [
+					{
+						"id": 140092,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 292004,
+								"style": {
+									"width": 100,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132489,
+										"entry_type_id": 9999,
+										"text": "Field Observation",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"pdfsection_screen_entry_guid": "808BBABF376EF1027B688793B5996AB982C115ED",
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"bg_color": "#ffffff",
+												"font_style": "normal",
+												"font_weight": "bold",
+												"text_decoration": "none",
+												"text_align": "left"
+											},
+											"link": ""
+										}
+									}
+								]
+							}
+						],
+						"properties": {}
+					},
+					{
+						"id": 140093,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 292005,
+								"style": {
+									"width": 50,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132490,
+										"entry_type_id": 8,
+										"text": "Enter Your Observation",
+										"entry_guid": "808BBABF376EF1027B688793B5996AB982C115ED",
+										"entry_id": 40652295,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												},
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												}
+											},
+											"localStyle": {
+												"text_align": "left",
+												"font_weight": "normal"
+											}
+										}
+									},
+									{
+										"id": 1132493,
+										"entry_type_id": 10,
+										"text": "Image 01",
+										"entry_guid": "327DDB286CA81901029A2CA22D680682220E4FE0",
+										"entry_id": 40652297,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									}
+								]
+							},
+							{
+								"id": 292006,
+								"style": {
+									"width": 50,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132496,
+										"entry_type_id": 8,
+										"text": "Notes",
+										"entry_guid": "9073283DDC5A6BA37613A30FBE830089C453FCC7",
+										"entry_id": 40652296,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												},
+												"general": {
+													"font_family": "Arial",
+													"text_size": "12",
+													"text_color": "#000000",
+													"vertical_spacing": "1"
+												}
+											},
+											"localStyle": {
+												"text_align": "left",
+												"font_weight": "normal"
+											}
+										}
+									},
+									{
+										"id": 1132499,
+										"entry_type_id": 10,
+										"text": "Image 02",
+										"entry_guid": "59A6138C270554663037A85F4ADC4FB233F5DEB3",
+										"entry_id": 40652298,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									}
+								]
+							}
+						],
+						"properties": {}
+					}
+				]
+			}
+		],
+		"headers": [
+			{
+				"type": "PdfTemplateHeader",
+				"page_number": null,
+				"sections": [
+					{
+						"id": 140091,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 292001,
+								"style": {
+									"width": 18.97,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132483,
+										"entry_type_id": 9997,
+										"text": null,
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {}
+										}
+									}
+								]
+							},
+							{
+								"id": 292002,
+								"style": {
+									"width": 62.06,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132484,
+										"entry_type_id": 9999,
+										"text": "Company Name<div>Address</div><div>City, State 12345</div>",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": false,
+											"globalStyle": {
+												"general": {
+													"font_family": "Helvetica",
+													"text_color": "#000000",
+													"text_size": "14",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"text_align": "center"
+											},
+											"link": ""
+										}
+									}
+								]
+							},
+							{
+								"id": 292003,
+								"style": {
+									"width": 18.97,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132485,
+										"entry_type_id": 9999,
+										"text": "Field Observation",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"font_weight": "bold",
+												"text_align": "right"
+											},
+											"link": ""
+										}
+									},
+									{
+										"id": 1132486,
+										"entry_type_id": 9995,
+										"text": "No.",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"font_weight": "normal",
+												"text_align": "right"
+											}
+										}
+									}
+								]
+							}
+						],
+						"properties": {
+							"height": "1.25"
+						}
+					}
+				],
+				"default_data": {
+					"logo_url": "/company_images/2062",
+					"app_name": "Field Observation",
+					"header_info": "GoCanvas\n\n"
+				}
+			}
+		],
+		"footers": [
+			{
+				"type": "PdfTemplateFooter",
+				"page_number": null,
+				"sections": [
+					{
+						"id": 140094,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 292007,
+								"style": {
+									"width": 100,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132502,
+										"entry_type_id": 9996,
+										"text": "",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": false,
+											"globalStyle": {
+												"general": {
+													"font_family": "Helvetica",
+													"text_color": "#000000",
+													"text_size": "14",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"bg_color": "#ffffff",
+												"font_style": "normal",
+												"font_weight": "normal",
+												"text_decoration": "none",
+												"text_align": "right"
+											},
+											"links": [
+												{
+													"name": "Facebook",
+													"placeholder": "Enter Facebook URL",
+													"url": "https://www.facebook.com/pages/Canvas/247055383245?ref=mf",
+													"isSelected": false
+												},
+												{
+													"name": "Twitter",
+													"placeholder": "Enter Twitter Handle",
+													"url": "https://twitter.com/GoCanvas",
+													"isSelected": false
+												},
+												{
+													"name": "LinkedIn",
+													"placeholder": "Enter LinkedIn URL",
+													"url": "https://www.linkedin.com/company/canvas",
+													"isSelected": false
+												},
+												{
+													"name": "Angie's List",
+													"placeholder": "Enter Angie's List URL",
+													"url": "https://www.angieslist.com/",
+													"isSelected": false
+												},
+												{
+													"name": "Google Reviews",
+													"placeholder": "Enter Google Reviews URL",
+													"url": "https://www.google.com/",
+													"isSelected": false
+												},
+												{
+													"name": "Home Advisor",
+													"placeholder": "Enter Home Advisor URL",
+													"url": "http://www.homeadvisor.com/",
+													"isSelected": false
+												},
+												{
+													"name": "Yelp",
+													"placeholder": "Enter Yelp URL",
+													"url": "https://www.yelp.com/",
+													"isSelected": false
+												}
+											]
+										}
+									}
+								]
+							}
+						],
+						"properties": {}
+					}
+				]
+			}
+		]
+	},
+	"global_properties": {
+		"general": {
+			"font_family": "Arial",
+			"text_color": "#000000",
+			"text_size": "12",
+			"vertical_spacing": "1"
+		},
+		"column": {
+			"padding": {
+				"top": "8",
+				"right": "8",
+				"bottom": "8",
+				"left": "8"
+			},
+			"borders": {
+				"direction": {
+					"left": false,
+					"top": false,
+					"right": false,
+					"bottom": false
+				},
+				"color": "#000000",
+				"style": "solid",
+				"width": "1"
+			},
+			"bg_color": "#ffffff"
+		},
+		"fields": {
+			"borders": {
+				"left": false,
+				"top": false,
+				"right": false,
+				"bottom": false
+			},
+			"show_label": true,
+			"line_height": "143%"
+		},
+		"table": {
+			"header": {
+				"useGlobalProperty": true,
+				"bg_color": "#6f7e91",
+				"borders": {
+					"left": true,
+					"top": true,
+					"right": true,
+					"bottom": true
+				},
+				"padding": {
+					"left": "2",
+					"right": "2"
+				},
+				"text_align": "left",
+				"general": {
+					"font_family": "Arial",
+					"text_color": "#000000",
+					"text_size": "12",
+					"vertical_spacing": "1"
+				}
+			},
+			"rows": {
+				"useGlobalProperty": true,
+				"bg_color": "#ffffff",
+				"padding": {
+					"left": "2",
+					"right": "2"
+				},
+				"borders": {
+					"left": true,
+					"top": true,
+					"right": true,
+					"bottom": true
+				},
+				"text_align": "left",
+				"override_alignment": false,
+				"general": {
+					"font_family": "Arial",
+					"text_color": "#000000",
+					"text_size": "12",
+					"vertical_spacing": "1"
+				}
+			}
+		}
+	}
+}    *w                           G“
