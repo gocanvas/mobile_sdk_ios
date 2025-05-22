@@ -14,7 +14,7 @@ The Swift Package Manager is a tool for automating the distribution of Swift cod
 Once you have your Swift package set up, adding GCSdk as a dependency is as easy as adding it to the dependencies value of your Package.swift or the Package list in Xcode.
 ```
 dependencies: [
-    .package(url: "https://github.com/gocanvas/mobile_sdk_ios.git", .upToNextMajor(from: "2.0.0"))
+    .package(url: "https://github.com/gocanvas/mobile_sdk_ios.git", .upToNextMajor(from: "3.0.0"))
 ]
 ```
 
@@ -112,6 +112,33 @@ Acts as support for prefilling the form's entries by passing a list of responses
 }
 ```
 
+3. Prefill with Partially Response
+<a id="prefill-with-partially-response"></a>
+
+```json
+{
+  "guid": "12345-abcd",
+  "last_sheet_id": "12345",
+  "status": "open",
+  "form": {
+    "id": 6789,
+    "version": 1
+  },
+  "responses": [
+    {
+      "entry_id": 12345,
+      "guid": "55EB..",
+      "displayed": true,
+      "multi_key": "Multi Key Example Value",
+      "key_id": 789789,
+      "multi_key_id": 345345,
+      "value": "Example Value",
+      "label": "Example Label"
+    }
+  ]
+}  
+```
+
 #### Retrieving special messages from the SDK
 
 Through the MessagingDelegate, the SDK will request a specific action from the parent app.
@@ -181,11 +208,13 @@ The response will be a `String` containing a JSON.
 
 For media files, entries that populate images will contain paths to locally stored images written under the *_Value_* field. For multi image entries, multiple paths will be appended with a newline separator. 
 
-### Resume Form Response
+The response status can contain one of the following values:
+1. `closed` - when the user has closed the response by clicking the "Submit" button 
+2. `open` - when the user has elected to "Save and Close" the response prior to clicking the "Submit" button
 
-The SDK provides the ability to resume the form response in case of an app crash or of a partially form completion.
+### App crash or unexpected form closing
 
-In order to do that, you just have to call the `formLauncher.formFlowController` method again by passing the same `jsonInput` input. The User will be prompted when there is a partially saved form response and he/she will be able to choose between resuming the form or starting a new submission of it.
+If the app crashes or closes unexpectedly, upon launching the SDK for a form the SDK will check for a "leftover" response from a previous expected close. If a "leftover" response exists for the form the user will be prompted if the wish to continue the "leftover" response or discard it and continue.
 
 ### Errors
 
@@ -241,12 +270,37 @@ The color system that can be used to create a color scheme that reflects your br
 |gc_sdk_color_primary|![#039de7](https://placehold.co/15x15/039de7/039de7.png) #039de7 |
 |gc_sdk_color_rating_selected|![#039de7](https://placehold.co/15x15/039de7/039de7.png) #039de7|
 |gc_sdk_color_secondary|![#00bfa5](https://placehold.co/15x15/00bfa5/00bfa5.png) #00bfa5|
+|gc_sdk_color_background|![#E9E9E9	](https://placehold.co/15x15/E9E9E9/E9E9E9.png) #E9E9E9|
+|gc_sdk_color_background_progress|![#DDDDDD](https://placehold.co/15x15/DDDDDD/DDDDDD.png) #DDDDDD|
+|gc_sdk_color_error|![#D73A31](https://placehold.co/15x15/D73A31/D73A31.png) #D73A31|
+|gc_sdk_color_secondary_container_high|![#BDBDBD](https://placehold.co/15x15/BDBDBD/BDBDBD.png) #BDBDBD|
+|gc_sdk_color_secondary_container_low|![#F1F1F5](https://placehold.co/15x15/F1F1F5/F1F1F5.png) #F1F1F5|
+|gc_sdk_color_secondary_container|![#fbfcfd](https://placehold.co/15x15/fbfcfd/fbfcfd.png) #fbfcfd|
+|gc_sdk_color|![#FFFFFF](https://placehold.co/15x15/FFFFFF/FFFFFF.png) #FFFFFF|
  
-By overriding this color attribute, you can easily change the style of the customizable components used by the sdk.
+By overriding these color attributes, you can easily change the style of the customizable components used by the sdk.
 
-****Applying your own colors:****
+### Light & Dark mode
 
-In order to use your color as the theme for the form flow, a `Color Set` must be added to any `xcasset` available in your target with the following names: 
+**Applying your own colors:**
+
+1. Enable the theme mode with the SDK API (default is set to `LIGHT`)
+
+Call the following method after SDK config initialization:
+
+```swift 
+formLauncher.addConfigValue(key: "MOBILE_INTERFACE_THEME", value: UIUserInterfaceStyle.dark)
+```
+
+2. In order to use your color as the theme for the form flow, a `Color Set` must be added to any `xcasset` available in your target with the following names:
 - `gc_sdk_color_primary`
 - `gc_sdk_color_rating_selected`
 - `gc_sdk_color_secondary`
+- `gc_sdk_color_background`
+- `gc_sdk_color_background_progress`
+- `gc_sdk_color_error`
+- `gc_sdk_color_secondary_container_high`
+- `gc_sdk_color_secondary_container_low`
+- `gc_sdk_color_secondary_container`
+- `gc_sdk_color`
+
