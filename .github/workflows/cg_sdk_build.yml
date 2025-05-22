@@ -57,8 +57,8 @@ jobs:
         
       - name: Clear SPM
         run: |
-          cd temp_ios_sdk/qasampleapp
-          rm -f qasampleapp.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+          cd temp_ios_sdk/GCSdk
+          rm -f GCSdk.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
 
       - name: Install the Apple certificate and provisioning profile
         env:
@@ -106,9 +106,9 @@ jobs:
         run: |
           mkdir -p $GITHUB_WORKSPACE/build
           
-          xcodebuild archive -project "qasampleapp/qasampleapp.xcodeproj" -scheme GCSdk -destination "generic/platform=iOS" -archivePath "$GITHUB_WORKSPACE/build/iphone-archive" SKIP_INSTALL=NO
+          xcodebuild archive -project "GCSdk/GCSdk.xcodeproj" -scheme GCSdk -destination "generic/platform=iOS" -archivePath "$GITHUB_WORKSPACE/build/iphone-archive" SKIP_INSTALL=NO
 
-          xcodebuild archive -project "qasampleapp/qasampleapp.xcodeproj" -scheme GCSdk -destination "generic/platform=iOS Simulator" -archivePath "$GITHUB_WORKSPACE/build/iphone-simulator-archive" SKIP_INSTALL=NO
+          xcodebuild archive -project "GCSdk/GCSdk.xcodeproj" -scheme GCSdk -destination "generic/platform=iOS Simulator" -archivePath "$GITHUB_WORKSPACE/build/iphone-simulator-archive" SKIP_INSTALL=NO
 
           xcodebuild -create-xcframework -archive "$GITHUB_WORKSPACE/build/iphone-simulator-archive.xcarchive" -framework GCSdk.framework -archive "$GITHUB_WORKSPACE/build/iphone-archive.xcarchive" -framework GCSdk.framework -output "$GITHUB_WORKSPACE/build/framework/GCSdk.xcframework"
 
