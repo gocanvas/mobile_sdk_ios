@@ -1,0 +1,812 @@
+bplist00Ò^FormDefinition]PDFDefinition_z<?xml version="1.0" encoding="UTF-8"?>
+<Form ID="612604" Name="Photo Log" Version="3" ImageID="" AllowEmail="2" Username="diego_builder@gocanvas.com" Status="published" ShowMenu="0"  MobileBuilderEnabled="false"  RemRecall="1" Editable="3" ParentID="611974" WorkflowId="" CompressionQuality="80" CompressionDimension="800">
+  <Section ID="5836600" Name="Photo Log" Type="0">
+    <Sheet ID="6010924" Name="Photo Log" Type="3" MultiSec="5836601" AllowDuplicate="false" DisplayEntryID="" Style="1">
+      <Entry ID="40663952" Label="Photo Description" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="905385BE5A58B249EFEE95015574547DC9F0067C">
+      </Entry>
+    </Sheet>
+  </Section>
+  <Section ID="5836601" Name="Photo Log (Detail)" Type="1">
+    <Sheet ID="6010923" Name="Photo Log" Type="1" MultiSec="-1" AllowDuplicate="false" DisplayEntryID="" Style="0">
+      <Entry ID="40663950" Label="Photo" Length="" Min="" Max="" Default="" Required="false" Type="10" ReceiptLabel="" Mask="00" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="2F91FEC72F90A7F1A970EE4761FC891B83452C88">
+      </Entry>
+      <Entry ID="40663951" Label="Notes" Length="" Min="" Max="" Default="" Required="false" Type="8" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="4C1A4F3C60A74A0606195F732B1489ACB0CCC127">
+      </Entry>
+    </Sheet>
+  </Section>
+  <Departments>
+    
+  </Departments>
+  <Folders>
+  </Folders>
+</Form>
+_c~{
+  "id": 7523,
+  "form_id": 612604,
+  "orientation": "Portrait",
+  "creator_id": 3478,
+  "size": "us-letter",
+  "top_margin": 2,
+  "right_margin": 2,
+  "left_margin": 2,
+  "bottom_margin": 2,
+  "components": {
+    "pages": [{
+      "type": "PdfTemplatePage",
+      "page_number": 1,
+      "sections": [{
+        "id": 146025,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302580,
+          "style": {
+            "width": 100
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "entry_type_id": 9998,
+            "text": "Photo Log",
+            "value": {
+              "type": "table",
+              "entry_guid": "905385BE5A58B249EFEE95015574547DC9F0067C",
+              "columns": [{
+                "headerText": "Photo Description",
+                "values": [{
+                  "entry_type_id": 0,
+                  "text": "Photo Description",
+                  "entry_guid": "905385BE5A58B249EFEE95015574547DC9F0067C",
+                  "entry_id": 40663952,
+                  "properties": {
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 198.66666666666666
+              }, {
+                "headerText": "Photo",
+                "values": [{
+                  "entry_type_id": 10,
+                  "text": "Photo",
+                  "entry_guid": "2F91FEC72F90A7F1A970EE4761FC891B83452C88",
+                  "entry_id": 40663950,
+                  "properties": {
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 198.66666666666666
+              }, {
+                "headerText": "Notes",
+                "values": [{
+                  "entry_type_id": 8,
+                  "text": "Notes",
+                  "entry_guid": "4C1A4F3C60A74A0606195F732B1489ACB0CCC127",
+                  "entry_id": 40663951,
+                  "properties": {
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 198.66666666666666
+              }],
+              "properties": {
+                "response_groups": true
+              }
+            },
+            "entry_guid": null,
+            "properties": {
+              "globalStyle": {
+                "table": {
+                  "header": {
+                    "useGlobalProperty": true,
+                    "bg_color": "#6f7e91",
+                    "borders": {
+                      "left": true,
+                      "top": true,
+                      "right": true,
+                      "bottom": true
+                    },
+                    "padding": {
+                      "left": "2",
+                      "right": "2"
+                    },
+                    "text_align": "left",
+                    "general": {
+                      "font_family": "Arial",
+                      "text_color": "#000000",
+                      "text_size": "12",
+                      "vertical_spacing": "1"
+                    }
+                  },
+                  "rows": {
+                    "useGlobalProperty": true,
+                    "bg_color": "#ffffff",
+                    "padding": {
+                      "left": "2",
+                      "right": "2"
+                    },
+                    "borders": {
+                      "left": true,
+                      "top": true,
+                      "right": true,
+                      "bottom": true
+                    },
+                    "text_align": "left",
+                    "override_alignment": false,
+                    "general": {
+                      "font_family": "Arial",
+                      "text_color": "#000000",
+                      "text_size": "12",
+                      "vertical_spacing": "1"
+                    }
+                  }
+                }
+              }
+            }
+          }]
+        }],
+        "properties": {
+          "list": true
+        }
+      }]
+    }],
+    "headers": [{
+      "type": "PdfTemplateHeader",
+      "page_number": null,
+      "sections": [{
+        "id": 146024,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302577,
+          "style": {
+            "width": 18.97,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181796,
+            "entry_type_id": 9997,
+            "text": null,
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {}
+            }
+          }]
+        }, {
+          "id": 302578,
+          "style": {
+            "width": 62.06,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181797,
+            "entry_type_id": 9999,
+            "text": "Company Name<div>Address</div><div>City, State 12345</div>",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": false,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Helvetica",
+                  "text_color": "#000000",
+                  "text_size": "14",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "text_align": "center"
+              },
+              "link": ""
+            }
+          }]
+        }, {
+          "id": 302579,
+          "style": {
+            "width": 18.97,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181798,
+            "entry_type_id": 9999,
+            "text": "Photo Log",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "pdfsection_screen_entry_guid": "2F91FEC72F90A7F1A970EE4761FC891B83452C88",
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "font_weight": "bold",
+                "text_align": "right"
+              },
+              "link": ""
+            }
+          }, {
+            "id": 1181799,
+            "entry_type_id": 9995,
+            "text": "No.",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "font_weight": "normal",
+                "text_align": "right"
+              }
+            }
+          }]
+        }],
+        "properties": {
+          "height": "1.25"
+        }
+      }],
+      "default_data": {
+        "logo_url": "/company_images/2062",
+        "app_name": "Photo Log",
+        "header_info": "GoCanvas\n\n"
+      }
+    }],
+    "footers": [{
+      "type": "PdfTemplateFooter",
+      "page_number": null,
+      "sections": [{
+        "id": 146026,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302581,
+          "style": {
+            "width": 100,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181814,
+            "entry_type_id": 9996,
+            "text": "",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "bg_color": "#ffffff",
+                "font_style": "normal",
+                "font_weight": "normal",
+                "text_decoration": "none",
+                "text_align": "right"
+              },
+              "links": [{
+                "name": "Facebook",
+                "placeholder": "Enter Facebook URL",
+                "url": "https://www.facebook.com/pages/Canvas/247055383245?ref=mf",
+                "isSelected": false
+              }, {
+                "name": "Twitter",
+                "placeholder": "Enter Twitter Handle",
+                "url": "https://twitter.com/GoCanvas",
+                "isSelected": false
+              }, {
+                "name": "LinkedIn",
+                "placeholder": "Enter LinkedIn URL",
+                "url": "https://www.linkedin.com/company/canvas",
+                "isSelected": false
+              }, {
+                "name": "Angie's List",
+                "placeholder": "Enter Angie's List URL",
+                "url": "https://www.angieslist.com/",
+                "isSelected": false
+              }, {
+                "name": "Google Reviews",
+                "placeholder": "Enter Google Reviews URL",
+                "url": "https://www.google.com/",
+                "isSelected": false
+              }, {
+                "name": "Home Advisor",
+                "placeholder": "Enter Home Advisor URL",
+                "url": "http://www.homeadvisor.com/",
+                "isSelected": false
+              }, {
+                "name": "Yelp",
+                "placeholder": "Enter Yelp URL",
+                "url": "https://www.yelp.com/",
+                "isSelected": false
+              }]
+            }
+          }]
+        }],
+        "properties": {}
+      }]
+    }]
+  },
+  "global_properties": {
+    "general": {
+      "font_family": "Arial",
+      "text_color": "#000000",
+      "text_size": "12",
+      "vertical_spacing": "1"
+    },
+    "column": {
+      "padding": {
+        "top": "8",
+        "right": "8",
+        "bottom": "8",
+        "left": "8"
+      },
+      "borders": {
+        "direction": {
+          "left": false,
+          "top": false,
+          "right": false,
+          "bottom": false
+        },
+        "color": "#000000",
+        "style": "solid",
+        "width": "1"
+      },
+      "bg_color": "#ffffff"
+    },
+    "fields": {
+      "borders": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "show_label": true,
+      "line_height": "143%"
+    },
+    "table": {
+      "header": {
+        "useGlobalProperty": true,
+        "bg_color": "#6f7e91",
+        "borders": {
+          "left": true,
+          "top": true,
+          "right": true,
+          "bottom": true
+        },
+        "padding": {
+          "left": "2",
+          "right": "2"
+        },
+        "text_align": "left",
+        "general": {
+          "font_family": "Arial",
+          "text_color": "#000000",
+          "text_size": "12",
+          "vertical_spacing": "1"
+        }
+      },
+      "rows": {
+        "useGlobalProperty": true,
+        "bg_color": "#ffffff",
+        "padding": {
+          "left": "2",
+          "right": "2"
+        },
+        "borders": {
+          "left": true,
+          "top": true,
+          "right": true,
+          "bottom": true
+        },
+        "text_align": "left",
+        "override_alignment": false,
+        "general": {
+          "font_family": "Arial",
+          "text_color": "#000000",
+          "text_size": "12",
+          "vertical_spacing": "1"
+        }
+      }
+    }
+  }
+}    *¨                           k*
