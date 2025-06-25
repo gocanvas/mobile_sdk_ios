@@ -1,0 +1,1020 @@
+bplist00“^FormDefinition]PDFDefinition_1<?xml version="1.0" encoding="UTF-8"?>
+<Form ID="612602" Name="Inspection" Version="4" ImageID="" AllowEmail="2" Username="diego_builder@gocanvas.com" Status="published" ShowMenu="0"  MobileBuilderEnabled="false"  RemRecall="1" Editable="3" ParentID="611971" WorkflowId="" CompressionQuality="80" CompressionDimension="800">
+  <Section ID="5836592" Name="Inspection" Type="0">
+    <Sheet ID="6010916" Name="Inspection" Type="3" MultiSec="5836593" AllowDuplicate="false" DisplayEntryID="" Style="1">
+      <Entry ID="40663934" Label="Item Inspected" Length="" Min="" Max="" Default="" Required="false" Type="5" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="3" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="A8F2966F1A0183CA4C31746D8D2B4DB429228072">
+        <Value Value="" />
+        <Value Value="Inspection Item 1" />
+        <Value Value="Inspection Item 2" />
+        <Value Value="Inspection Item 3" />
+        <Value Value="Inspection Item 4" />
+        <Value Value="Inspection Item 5" />
+        <Value Value="Inspection Item 6" />
+        <Value Value="Inspection Item 7" />
+        <Value Value="Inspection Item 8" />
+        <Value Value="Inspection Item 9" />
+        <Value Value="Inspection Item 10" />
+      </Entry>
+    </Sheet>
+  </Section>
+  <Section ID="5836593" Name="Inspection (Detail)" Type="1">
+    <Sheet ID="6010915" Name="Inspection" Type="1" MultiSec="-1" AllowDuplicate="false" DisplayEntryID="" Style="0">
+      <Entry ID="40663930" Label="Pass" Length="" Min="" Max="" Default="" Required="false" Type="7" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="B01CB064A537B3FD5E089BE86A7660B6E00F77D6">
+      </Entry>
+      <Entry ID="40663931" Label="Fail" Length="" Min="" Max="" Default="" Required="false" Type="7" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="0542B38B05A2F09574EF1FBD21AA69528B33F2F8">
+      </Entry>
+      <Entry ID="40663932" Label="Photo" Length="" Min="" Max="" Default="" Required="false" Type="10" ReceiptLabel="" Mask="00" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="029B9FB0BF0C2B94786D7DC37C1080AC2BB47BE8">
+      </Entry>
+      <Entry ID="40663933" Label="Comments" Length="" Min="" Max="" Default="" Required="false" Type="8" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="78E1541CEB640482086061F60EE1810A2AF3190B">
+      </Entry>
+    </Sheet>
+  </Section>
+  <Departments>
+    
+  </Departments>
+  <Folders>
+  </Folders>
+</Form>
+_Ä¶{
+  "id": 7519,
+  "form_id": 612602,
+  "orientation": "Portrait",
+  "creator_id": 3478,
+  "size": "us-letter",
+  "top_margin": 2,
+  "right_margin": 2,
+  "left_margin": 2,
+  "bottom_margin": 2,
+  "components": {
+    "pages": [{
+      "type": "PdfTemplatePage",
+      "page_number": 1,
+      "sections": [{
+        "id": 146007,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302550,
+          "style": {
+            "width": 100
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "entry_type_id": 9998,
+            "text": "Inspection",
+            "value": {
+              "type": "table",
+              "entry_guid": "A8F2966F1A0183CA4C31746D8D2B4DB429228072",
+              "columns": [{
+                "headerText": "Item Inspected",
+                "values": [{
+                  "entry_type_id": 5,
+                  "text": "Item Inspected",
+                  "entry_guid": "A8F2966F1A0183CA4C31746D8D2B4DB429228072",
+                  "entry_id": 40663934,
+                  "properties": {
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 168.2,
+                "resized": true
+              }, {
+                "headerText": "Pass",
+                "values": [{
+                  "entry_type_id": 7,
+                  "text": "Pass",
+                  "entry_guid": "B01CB064A537B3FD5E089BE86A7660B6E00F77D6",
+                  "entry_id": 40663930,
+                  "properties": {
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 54.2,
+                "resized": true
+              }, {
+                "headerText": "Fail",
+                "values": [{
+                  "entry_type_id": 7,
+                  "text": "Fail",
+                  "entry_guid": "0542B38B05A2F09574EF1FBD21AA69528B33F2F8",
+                  "entry_id": 40663931,
+                  "properties": {
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 53.19999999999999,
+                "resized": true
+              }, {
+                "headerText": "Photo",
+                "values": [{
+                  "entry_type_id": 10,
+                  "text": "Photo",
+                  "entry_guid": "029B9FB0BF0C2B94786D7DC37C1080AC2BB47BE8",
+                  "entry_id": 40663932,
+                  "properties": {
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 164.2,
+                "resized": true
+              }, {
+                "headerText": "Comments",
+                "values": [{
+                  "entry_type_id": 8,
+                  "text": "Comments",
+                  "entry_guid": "78E1541CEB640482086061F60EE1810A2AF3190B",
+                  "entry_id": 40663933,
+                  "properties": {
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 156.2
+              }],
+              "properties": {
+                "response_groups": true
+              }
+            },
+            "entry_guid": null,
+            "properties": {
+              "globalStyle": {
+                "table": {
+                  "header": {
+                    "useGlobalProperty": true,
+                    "bg_color": "#6f7e91",
+                    "borders": {
+                      "left": true,
+                      "top": true,
+                      "right": true,
+                      "bottom": true
+                    },
+                    "padding": {
+                      "left": "2",
+                      "right": "2"
+                    },
+                    "text_align": "left",
+                    "general": {
+                      "font_family": "Arial",
+                      "text_color": "#000000",
+                      "text_size": "12",
+                      "vertical_spacing": "1"
+                    }
+                  },
+                  "rows": {
+                    "useGlobalProperty": true,
+                    "bg_color": "#ffffff",
+                    "padding": {
+                      "left": "2",
+                      "right": "2"
+                    },
+                    "borders": {
+                      "left": true,
+                      "top": true,
+                      "right": true,
+                      "bottom": true
+                    },
+                    "text_align": "left",
+                    "override_alignment": false,
+                    "general": {
+                      "font_family": "Arial",
+                      "text_color": "#000000",
+                      "text_size": "12",
+                      "vertical_spacing": "1"
+                    }
+                  }
+                }
+              }
+            }
+          }]
+        }],
+        "properties": {
+          "list": true
+        }
+      }]
+    }],
+    "headers": [{
+      "type": "PdfTemplateHeader",
+      "page_number": null,
+      "sections": [{
+        "id": 146006,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302547,
+          "style": {
+            "width": 18.97,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181649,
+            "entry_type_id": 9997,
+            "text": null,
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {}
+            }
+          }]
+        }, {
+          "id": 302548,
+          "style": {
+            "width": 62.06,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181650,
+            "entry_type_id": 9999,
+            "text": "Company Name<div>Address</div><div>City, State 12345</div>",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "text_align": "center"
+              },
+              "link": ""
+            }
+          }]
+        }, {
+          "id": 302549,
+          "style": {
+            "width": 18.97,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181651,
+            "entry_type_id": 9999,
+            "text": "Inspection",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "font_weight": "bold",
+                "text_align": "right"
+              },
+              "link": ""
+            }
+          }, {
+            "id": 1181652,
+            "entry_type_id": 9995,
+            "text": "No.",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "font_weight": "normal",
+                "text_align": "right"
+              }
+            }
+          }]
+        }],
+        "properties": {
+          "height": "1.25"
+        }
+      }],
+      "default_data": {
+        "logo_url": "/company_images/2062",
+        "app_name": "Inspection",
+        "header_info": "GoCanvas\n\n"
+      }
+    }],
+    "footers": [{
+      "type": "PdfTemplateFooter",
+      "page_number": null,
+      "sections": [{
+        "id": 146008,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302551,
+          "style": {
+            "width": 100,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181673,
+            "entry_type_id": 9996,
+            "text": "",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "bg_color": "#ffffff",
+                "font_style": "normal",
+                "font_weight": "normal",
+                "text_decoration": "none",
+                "text_align": "right"
+              },
+              "links": [{
+                "name": "Facebook",
+                "placeholder": "Enter Facebook URL",
+                "url": "https://www.facebook.com/pages/Canvas/247055383245?ref=mf",
+                "isSelected": false
+              }, {
+                "name": "Twitter",
+                "placeholder": "Enter Twitter Handle",
+                "url": "https://twitter.com/GoCanvas",
+                "isSelected": false
+              }, {
+                "name": "LinkedIn",
+                "placeholder": "Enter LinkedIn URL",
+                "url": "https://www.linkedin.com/company/canvas",
+                "isSelected": false
+              }, {
+                "name": "Angie's List",
+                "placeholder": "Enter Angie's List URL",
+                "url": "https://www.angieslist.com/",
+                "isSelected": false
+              }, {
+                "name": "Google Reviews",
+                "placeholder": "Enter Google Reviews URL",
+                "url": "https://www.google.com/",
+                "isSelected": false
+              }, {
+                "name": "Home Advisor",
+                "placeholder": "Enter Home Advisor URL",
+                "url": "http://www.homeadvisor.com/",
+                "isSelected": false
+              }, {
+                "name": "Yelp",
+                "placeholder": "Enter Yelp URL",
+                "url": "https://www.yelp.com/",
+                "isSelected": false
+              }]
+            }
+          }]
+        }],
+        "properties": {}
+      }]
+    }]
+  },
+  "global_properties": {
+    "general": {
+      "font_family": "Arial",
+      "text_color": "#000000",
+      "text_size": "12",
+      "vertical_spacing": "1"
+    },
+    "column": {
+      "padding": {
+        "top": "8",
+        "right": "8",
+        "bottom": "8",
+        "left": "8"
+      },
+      "borders": {
+        "direction": {
+          "left": false,
+          "top": false,
+          "right": false,
+          "bottom": false
+        },
+        "color": "#000000",
+        "style": "solid",
+        "width": "1"
+      },
+      "bg_color": "#ffffff"
+    },
+    "fields": {
+      "borders": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "show_label": true,
+      "line_height": "143%"
+    },
+    "table": {
+      "header": {
+        "useGlobalProperty": true,
+        "bg_color": "#6f7e91",
+        "borders": {
+          "left": true,
+          "top": true,
+          "right": true,
+          "bottom": true
+        },
+        "padding": {
+          "left": "2",
+          "right": "2"
+        },
+        "text_align": "left",
+        "general": {
+          "font_family": "Arial",
+          "text_color": "#000000",
+          "text_size": "12",
+          "vertical_spacing": "1"
+        }
+      },
+      "rows": {
+        "useGlobalProperty": true,
+        "bg_color": "#ffffff",
+        "padding": {
+          "left": "2",
+          "right": "2"
+        },
+        "borders": {
+          "left": true,
+          "top": true,
+          "right": true,
+          "bottom": true
+        },
+        "text_align": "left",
+        "override_alignment": false,
+        "general": {
+          "font_family": "Arial",
+          "text_color": "#000000",
+          "text_size": "12",
+          "vertical_spacing": "1"
+        }
+      }
+    }
+  }
+}    *_                           ç	

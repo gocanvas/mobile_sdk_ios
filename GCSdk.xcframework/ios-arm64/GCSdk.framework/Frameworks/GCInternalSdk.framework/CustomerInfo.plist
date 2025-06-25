@@ -1,0 +1,776 @@
+bplist00Ò^FormDefinition]PDFDefinition_ì<?xml version="1.0" encoding="UTF-8"?>
+<Form ID="611969" Name="Customer Info" Version="1" ImageID="" AllowEmail="2" Username="diego_builder@gocanvas.com" Status="published" ShowMenu="0"  MobileBuilderEnabled="false"  RemRecall="1" Editable="3" ParentID="611969" WorkflowId="" CompressionQuality="80" CompressionDimension="800">
+  <Section ID="5833797" Name="Customer Info" Type="0">
+    <Sheet ID="6008119" Name="Customer Info" Type="1" MultiSec="-1" AllowDuplicate="false" DisplayEntryID="" Style="0">
+      <Entry ID="40652287" Label="First Name" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "B06D90EDEE18AEE43D5C007A726422E06FBB439E">
+      </Entry>
+      <Entry ID="40652288" Label="Last Name" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "3089D7ADE94D93B1C1746D13AFFB7F405682AB62">
+      </Entry>
+      <Entry ID="40652289" Label="Phone" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="6" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "A34D9F0F6179DCE6A759980AE505F9E11C8B19A7">
+      </Entry>
+      <Entry ID="40652290" Label="Email" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="10" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "E9FAE6F14846D789EEF082908EE82A7E2F139024">
+      </Entry>
+      <Entry ID="40652291" Label="Address" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "2ABCA528B6D7D84B2952E5383649C031EA902199">
+      </Entry>
+      <Entry ID="40652292" Label="City" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "8BCDB0C129EDB12687D4473372A75EAA4C3348E9">
+      </Entry>
+      <Entry ID="40652293" Label="State" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "F803535523A73604FBBE3507FDCBDEA89E9A8762">
+      </Entry>
+      <Entry ID="40652294" Label="Zip" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "2DECAFCBA9073EBC1B23D80CB5DE8D5F34C9026B">
+      </Entry>
+    </Sheet>
+  </Section>
+  <Departments>
+
+  </Departments>
+  <Folders>
+  </Folders>
+</Form>_Dš{
+	"id": 6743,
+	"form_id": 611969,
+	"orientation": "Portrait",
+	"creator_id": 3478,
+	"size": "us-letter",
+	"top_margin": 2,
+	"right_margin": 2,
+	"left_margin": 2,
+	"bottom_margin": 2,
+	"components": {
+		"pages": [
+			{
+				"type": "PdfTemplatePage",
+				"page_number": 1,
+				"sections": [
+					{
+						"id": 140084,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 291986,
+								"style": {
+									"width": 100,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132423,
+										"entry_type_id": 9999,
+										"text": "Customer Info",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"pdfsection_screen_entry_guid": "B06D90EDEE18AEE43D5C007A726422E06FBB439E",
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"bg_color": "#ffffff",
+												"font_style": "normal",
+												"font_weight": "bold",
+												"text_decoration": "none",
+												"text_align": "left"
+											},
+											"link": ""
+										}
+									}
+								]
+							}
+						],
+						"properties": {}
+					},
+					{
+						"id": 140085,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 291987,
+								"style": {
+									"width": 25,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132424,
+										"entry_type_id": 0,
+										"text": "First Name",
+										"entry_guid": "B06D90EDEE18AEE43D5C007A726422E06FBB439E",
+										"entry_id": 40652287,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									},
+									{
+										"id": 1132427,
+										"entry_type_id": 0,
+										"text": "Address",
+										"entry_guid": "2ABCA528B6D7D84B2952E5383649C031EA902199",
+										"entry_id": 40652291,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									}
+								]
+							},
+							{
+								"id": 291988,
+								"style": {
+									"width": 25,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132430,
+										"entry_type_id": 0,
+										"text": "Last Name",
+										"entry_guid": "3089D7ADE94D93B1C1746D13AFFB7F405682AB62",
+										"entry_id": 40652288,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									},
+									{
+										"id": 1132433,
+										"entry_type_id": 0,
+										"text": "City",
+										"entry_guid": "8BCDB0C129EDB12687D4473372A75EAA4C3348E9",
+										"entry_id": 40652292,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									}
+								]
+							},
+							{
+								"id": 291989,
+								"style": {
+									"width": 25,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132436,
+										"entry_type_id": 0,
+										"text": "Phone",
+										"entry_guid": "A34D9F0F6179DCE6A759980AE505F9E11C8B19A7",
+										"entry_id": 40652289,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									},
+									{
+										"id": 1132439,
+										"entry_type_id": 0,
+										"text": "State",
+										"entry_guid": "F803535523A73604FBBE3507FDCBDEA89E9A8762",
+										"entry_id": 40652293,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									}
+								]
+							},
+							{
+								"id": 291990,
+								"style": {
+									"width": 25,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132442,
+										"entry_type_id": 0,
+										"text": "Email",
+										"entry_guid": "E9FAE6F14846D789EEF082908EE82A7E2F139024",
+										"entry_id": 40652290,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									},
+									{
+										"id": 1132445,
+										"entry_type_id": 0,
+										"text": "Zip",
+										"entry_guid": "2DECAFCBA9073EBC1B23D80CB5DE8D5F34C9026B",
+										"entry_id": 40652294,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									}
+								]
+							}
+						],
+						"properties": {}
+					}
+				]
+			}
+		],
+		"headers": [
+			{
+				"type": "PdfTemplateHeader",
+				"page_number": null,
+				"sections": [
+					{
+						"id": 140083,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 291983,
+								"style": {
+									"width": 18.97,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132417,
+										"entry_type_id": 9997,
+										"text": null,
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {}
+										}
+									}
+								]
+							},
+							{
+								"id": 291984,
+								"style": {
+									"width": 62.06,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132418,
+										"entry_type_id": 9999,
+										"text": "Customer Name<div>Address</div><div>City, State 12345</div>",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": false,
+											"globalStyle": {
+												"general": {
+													"font_family": "Helvetica",
+													"text_color": "#000000",
+													"text_size": "14",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"text_align": "center"
+											},
+											"link": ""
+										}
+									}
+								]
+							},
+							{
+								"id": 291985,
+								"style": {
+									"width": 18.97,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132419,
+										"entry_type_id": 9999,
+										"text": "Customer Info",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"font_weight": "bold",
+												"text_align": "center"
+											},
+											"link": ""
+										}
+									},
+									{
+										"id": 1132420,
+										"entry_type_id": 9995,
+										"text": "No.",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"font_weight": "normal",
+												"text_align": "right"
+											}
+										}
+									}
+								]
+							}
+						],
+						"properties": {
+							"height": "1.25"
+						}
+					}
+				],
+				"default_data": {
+					"logo_url": "/company_images/2062",
+					"app_name": "Customer Info",
+					"header_info": "GoCanvas\n\n"
+				}
+			}
+		],
+		"footers": [
+			{
+				"type": "PdfTemplateFooter",
+				"page_number": null,
+				"sections": [
+					{
+						"id": 140086,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 291991,
+								"style": {
+									"width": 100,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132448,
+										"entry_type_id": 9996,
+										"text": "",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"bg_color": "#ffffff",
+												"font_style": "normal",
+												"font_weight": "normal",
+												"text_decoration": "none",
+												"text_align": "right"
+											},
+											"links": [
+												{
+													"name": "Facebook",
+													"placeholder": "Enter Facebook URL",
+													"url": "https://www.facebook.com/pages/Canvas/247055383245?ref=mf",
+													"isSelected": false
+												},
+												{
+													"name": "Twitter",
+													"placeholder": "Enter Twitter Handle",
+													"url": "https://twitter.com/GoCanvas",
+													"isSelected": false
+												},
+												{
+													"name": "LinkedIn",
+													"placeholder": "Enter LinkedIn URL",
+													"url": "https://www.linkedin.com/company/canvas",
+													"isSelected": false
+												},
+												{
+													"name": "Angie's List",
+													"placeholder": "Enter Angie's List URL",
+													"url": "https://www.angieslist.com/",
+													"isSelected": false
+												},
+												{
+													"name": "Google Reviews",
+													"placeholder": "Enter Google Reviews URL",
+													"url": "https://www.google.com/",
+													"isSelected": false
+												},
+												{
+													"name": "Home Advisor",
+													"placeholder": "Enter Home Advisor URL",
+													"url": "http://www.homeadvisor.com/",
+													"isSelected": false
+												},
+												{
+													"name": "Yelp",
+													"placeholder": "Enter Yelp URL",
+													"url": "https://www.yelp.com/",
+													"isSelected": false
+												}
+											]
+										}
+									}
+								]
+							}
+						],
+						"properties": {}
+					}
+				]
+			}
+		]
+	},
+	"global_properties": {
+		"general": {
+			"font_family": "Arial",
+			"text_color": "#000000",
+			"text_size": "12",
+			"vertical_spacing": "1"
+		},
+		"column": {
+			"padding": {
+				"top": "8",
+				"right": "8",
+				"bottom": "8",
+				"left": "8"
+			},
+			"borders": {
+				"direction": {
+					"left": false,
+					"top": false,
+					"right": false,
+					"bottom": false
+				},
+				"color": "#000000",
+				"style": "solid",
+				"width": "1"
+			},
+			"bg_color": "#ffffff"
+		},
+		"fields": {
+			"borders": {
+				"left": false,
+				"top": false,
+				"right": false,
+				"bottom": false
+			},
+			"show_label": true,
+			"line_height": "143%"
+		},
+		"table": {
+			"header": {
+				"useGlobalProperty": true,
+				"bg_color": "#6f7e91",
+				"borders": {
+					"left": true,
+					"top": true,
+					"right": true,
+					"bottom": true
+				},
+				"padding": {
+					"left": "2",
+					"right": "2"
+				},
+				"text_align": "left",
+				"general": {
+					"font_family": "Arial",
+					"text_color": "#000000",
+					"text_size": "12",
+					"vertical_spacing": "1"
+				}
+			},
+			"rows": {
+				"useGlobalProperty": true,
+				"bg_color": "#ffffff",
+				"padding": {
+					"left": "2",
+					"right": "2"
+				},
+				"borders": {
+					"left": true,
+					"top": true,
+					"right": true,
+					"bottom": true
+				},
+				"text_align": "left",
+				"override_alignment": false,
+				"general": {
+					"font_family": "Arial",
+					"text_color": "#000000",
+					"text_size": "12",
+					"vertical_spacing": "1"
+				}
+			}
+		}
+	}
+}    *                           R¸

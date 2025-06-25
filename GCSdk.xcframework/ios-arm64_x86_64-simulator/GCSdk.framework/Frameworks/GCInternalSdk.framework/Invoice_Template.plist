@@ -1,0 +1,1622 @@
+bplist00Ò^FormDefinition]PDFDefinition_0<?xml version="1.0" encoding="UTF-8"?>
+<Form ID="612600" Name="Invoice" Version="2" ImageID="6548" AllowEmail="2" Username="diego_builder@gocanvas.com" Status="published" ShowMenu="0"  MobileBuilderEnabled="false"  RemRecall="1" Editable="3" ParentID="611980" WorkflowId="" CompressionQuality="80" CompressionDimension="800">
+  <Section ID="5836574" Name="Customer Information" Type="0">
+    <Sheet ID="6010897" Name="Customer Information" Type="1" MultiSec="-1" AllowDuplicate="false" DisplayEntryID="" Style="0">
+      <Entry ID="40663846" Label="Company Name" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="811C22E373EA14F95A5BA3C7B4B73E8A46898266">
+      </Entry>
+      <Entry ID="40663847" Label="Date" Length="" Min="" Max="" Default="" Required="false" Type="3" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="FAA8AFCAD762DE1CC346A5324F9EB23807BD8902">
+      </Entry>
+      <Entry ID="40663848" Label="Phone" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="6" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="87DDD7307D1B09AF5DEDF788AF90CAF80F22A877">
+      </Entry>
+      <Entry ID="40663849" Label="Email" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="10" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="DB9C27DB449682A9C442007BEECE0779497EB7E3">
+      </Entry>
+      <Entry ID="40663850" Label="Address" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="CCFE7A55A8DBFD47011A022A32AA263D4ADAD1A8">
+      </Entry>
+      <Entry ID="40663851" Label="City" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="65705FFC23732B914DF44F36F9C4A82AF160D025">
+      </Entry>
+      <Entry ID="40663852" Label="State" Length="" Min="" Max="" Default="" Required="false" Type="5" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="CA991618DC8050DE24F56BAACB0FFD38FD8C9AFA">
+        <Value Value="" />
+        <Value Value="AK" />
+        <Value Value="AL" />
+        <Value Value="AR" />
+        <Value Value="AZ" />
+        <Value Value="CA" />
+        <Value Value="CO" />
+        <Value Value="CT" />
+        <Value Value="DC" />
+        <Value Value="DE" />
+        <Value Value="FL" />
+        <Value Value="GA" />
+        <Value Value="HI" />
+        <Value Value="IA" />
+        <Value Value="ID" />
+        <Value Value="IL" />
+        <Value Value="IN" />
+        <Value Value="KS" />
+        <Value Value="KY" />
+        <Value Value="LA" />
+        <Value Value="MA" />
+        <Value Value="MD" />
+        <Value Value="ME" />
+        <Value Value="MI" />
+        <Value Value="MN" />
+        <Value Value="MO" />
+        <Value Value="MS" />
+        <Value Value="MT" />
+        <Value Value="NC" />
+        <Value Value="ND" />
+        <Value Value="NE" />
+        <Value Value="NH" />
+        <Value Value="NJ" />
+        <Value Value="NM" />
+        <Value Value="NV" />
+        <Value Value="NY" />
+        <Value Value="OH" />
+        <Value Value="OK" />
+        <Value Value="OR" />
+        <Value Value="PA" />
+        <Value Value="RI" />
+        <Value Value="SC" />
+        <Value Value="SD" />
+        <Value Value="TN" />
+        <Value Value="TX" />
+        <Value Value="UT" />
+        <Value Value="VA" />
+        <Value Value="VT" />
+        <Value Value="WA" />
+        <Value Value="WI" />
+        <Value Value="WV" />
+        <Value Value="WY" />
+      </Entry>
+      <Entry ID="40663853" Label="Zip" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="125AC33BDB8EFE8A071641CF7DB028572F9848F5">
+      </Entry>
+    </Sheet>
+  </Section>
+  <Section ID="5836575" Name="Invoice Items" Type="0">
+    <Sheet ID="6010899" Name="Invoice Items" Type="3" MultiSec="5836576" AllowDuplicate="false" DisplayEntryID="" Style="1">
+      <Entry ID="40663857" Label="Description" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="D11963FA3EB5554C6362F6DC7BCBD8DFA135EFA7">
+      </Entry>
+    </Sheet>
+  </Section>
+  <Section ID="5836576" Name="Invoice Items (Detail)" Type="1">
+    <Sheet ID="6010898" Name="Invoice Items" Type="1" MultiSec="-1" AllowDuplicate="false" DisplayEntryID="" Style="0">
+      <Entry ID="40663854" Label="Qty" Length="" Min="" Max="" Default="" Required="false" Type="1" ReceiptLabel="" Mask="0" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="8FBF47EF01165AC90D54D9F37E149C3DF0E660BD">
+      </Entry>
+      <Entry ID="40663855" Label="Cost" Length="" Min="" Max="" Default="" Required="false" Type="2" ReceiptLabel="" Mask="2" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="4" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="DD768D5BC569C4559E5307F24924A05555B8E87E">
+      </Entry>
+      <Entry ID="40663856" Label="Total" Length="" Min="" Max="" Default="" Required="false" Type="21" ReceiptLabel="" Mask="2" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="4" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="3292704D98944E8388A417EC41463FD1AD9209FC">
+        <Operator EntryId="40663854" Value="" OperationId="0"/>
+        <Operator EntryId="40663855" Value="" OperationId="3"/>
+      </Entry>
+    </Sheet>
+  </Section>
+  <Section ID="5836577" Name="Invoice Summary" Type="0">
+    <Sheet ID="6010900" Name="Invoice Summary" Type="1" MultiSec="-1" AllowDuplicate="false" DisplayEntryID="" Style="0">
+      <Entry ID="40663858" Label="Invoice Item Total" Length="" Min="" Max="" Default="" Required="false" Type="20" ReceiptLabel="" Mask="2" SourceEntryId="40663856"  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="4" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="BCBA7DFC64F4AECD80763B0F8AFEF8AAF51F6E58">
+      </Entry>
+      <Entry ID="40663859" Label="Other Costs" Length="" Min="" Max="" Default="" Required="false" Type="2" ReceiptLabel="" Mask="2" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="4" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="58E0EF25AD592B5BD6BC52E8D3363B8F50DC1595">
+      </Entry>
+      <Entry ID="40663860" Label="Subtotal" Length="" Min="" Max="" Default="" Required="false" Type="21" ReceiptLabel="" Mask="2" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="4" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="4834144509271ECCEB542300015BB1BF23B19DEF">
+        <Operator EntryId="40663858" Value="" OperationId="0"/>
+        <Operator EntryId="40663859" Value="" OperationId="0"/>
+      </Entry>
+      <Entry ID="40663861" Label="Tax %" Length="" Min="" Max="" Default="" Required="false" Type="2" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="DE375493849C91E5C5EF7992A0F053F3AA397A35">
+      </Entry>
+      <Entry ID="40663862" Label="Tax Amount" Length="" Min="" Max="" Default="" Required="false" Type="21" ReceiptLabel="" Mask="2" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="4" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="E87120E73769346FB6459FB9E3A78D951955CA47">
+        <Operator EntryId="40663860" Value="" OperationId="0"/>
+        <Operator EntryId="40663861" Value="" OperationId="3"/>
+        <Operator EntryId="40663863" Value="100" OperationId="2"/>
+      </Entry>
+      <Entry ID="40663864" Label="Discount" Length="" Min="" Max="" Default="" Required="false" Type="2" ReceiptLabel="" Mask="2" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="4" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="952AE9BB0634D90E7601CD15DE81BC2D3AAFC9DF">
+      </Entry>
+      <Entry ID="40663865" Label="TOTAL" Length="" Min="" Max="" Default="" Required="false" Type="21" ReceiptLabel="" Mask="2" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="4" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="6CF0712A976DDCC7FF56D3AF21E7264C95B7FEA9">
+        <Operator EntryId="40663860" Value="" OperationId="0"/>
+        <Operator EntryId="40663862" Value="" OperationId="0"/>
+        <Operator EntryId="40663864" Value="" OperationId="1"/>
+      </Entry>
+      <Entry ID="40663866" Label="Other Comments" Length="" Min="" Max="" Default="" Required="false" Type="8" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="8FA2799FFCC0A1410A8F4CE60C425E50E8035252">
+      </Entry>
+      <Entry ID="40663867" Label="Vendor Signature" Length="" Min="" Max="" Default="" Required="false" Type="99" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="-1" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="D9B8E2B7D983971F5FC40DAD02059CAB0E96B23E">
+      </Entry>
+      <Entry ID="40663868" Label="Date" Length="" Min="" Max="" Default="" Required="false" Type="3" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="D586B6533D6EF84334CFA32610D13F20BAB59AA4">
+      </Entry>
+      <Entry ID="40663869" Label="Customer Signature" Length="" Min="" Max="" Default="" Required="false" Type="99" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="-1" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="288CCBCD8F8CD01D880B07707EBA4581D0C3D00E">
+      </Entry>
+      <Entry ID="40663870" Label="Date" Length="" Min="" Max="" Default="" Required="false" Type="3" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid="F57AAAE4A67AC37C76B86811E7CE1F6087B1DC7D">
+      </Entry>
+    </Sheet>
+  </Section>
+  <Departments>
+    
+  </Departments>
+  <Folders>
+  </Folders>
+</Form>
+_¶Q{
+  "id": 7515,
+  "form_id": 612600,
+  "orientation": "Portrait",
+  "creator_id": 3478,
+  "size": "us-letter",
+  "top_margin": 2,
+  "right_margin": 2,
+  "left_margin": 2,
+  "bottom_margin": 2,
+  "components": {
+    "pages": [{
+      "type": "PdfTemplatePage",
+      "page_number": 1,
+      "sections": [{
+        "id": 145970,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302483,
+          "style": {
+            "width": 100,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181233,
+            "entry_type_id": 9999,
+            "text": "Customer Information",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "pdfsection_screen_entry_guid": "811C22E373EA14F95A5BA3C7B4B73E8A46898266",
+                "general": {
+                  "font_family": "Helvetica",
+                  "text_color": "#000000",
+                  "text_size": "14",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "bg_color": "#ffffff",
+                "font_style": "normal",
+                "font_weight": "bold",
+                "text_decoration": "none",
+                "text_align": "left"
+              },
+              "link": ""
+            }
+          }]
+        }],
+        "properties": {}
+      }, {
+        "id": 145971,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302484,
+          "style": {
+            "width": 25,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181234,
+            "entry_type_id": 0,
+            "text": "Company Name",
+            "entry_guid": "811C22E373EA14F95A5BA3C7B4B73E8A46898266",
+            "entry_id": 40663846,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }, {
+            "id": 1181237,
+            "entry_type_id": 0,
+            "text": "Address",
+            "entry_guid": "CCFE7A55A8DBFD47011A022A32AA263D4ADAD1A8",
+            "entry_id": 40663850,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }]
+        }, {
+          "id": 302485,
+          "style": {
+            "width": 25,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181240,
+            "entry_type_id": 3,
+            "text": "Date",
+            "entry_guid": "FAA8AFCAD762DE1CC346A5324F9EB23807BD8902",
+            "entry_id": 40663847,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }, {
+            "id": 1181243,
+            "entry_type_id": 0,
+            "text": "City",
+            "entry_guid": "65705FFC23732B914DF44F36F9C4A82AF160D025",
+            "entry_id": 40663851,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }]
+        }, {
+          "id": 302486,
+          "style": {
+            "width": 25,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181246,
+            "entry_type_id": 0,
+            "text": "Phone",
+            "entry_guid": "87DDD7307D1B09AF5DEDF788AF90CAF80F22A877",
+            "entry_id": 40663848,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }, {
+            "id": 1181249,
+            "entry_type_id": 5,
+            "text": "State",
+            "entry_guid": "CA991618DC8050DE24F56BAACB0FFD38FD8C9AFA",
+            "entry_id": 40663852,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }]
+        }, {
+          "id": 302487,
+          "style": {
+            "width": 25,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181252,
+            "entry_type_id": 0,
+            "text": "Email",
+            "entry_guid": "DB9C27DB449682A9C442007BEECE0779497EB7E3",
+            "entry_id": 40663849,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }, {
+            "id": 1181255,
+            "entry_type_id": 0,
+            "text": "Zip",
+            "entry_guid": "125AC33BDB8EFE8A071641CF7DB028572F9848F5",
+            "entry_id": 40663853,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }]
+        }],
+        "properties": {}
+      }, {
+        "id": 145972,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302488,
+          "style": {
+            "width": 100
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "entry_type_id": 9998,
+            "text": "Invoice Items",
+            "value": {
+              "type": "table",
+              "entry_guid": "D11963FA3EB5554C6362F6DC7BCBD8DFA135EFA7",
+              "columns": [{
+                "headerText": "Description",
+                "values": [{
+                  "entry_type_id": 0,
+                  "text": "Description",
+                  "entry_guid": "D11963FA3EB5554C6362F6DC7BCBD8DFA135EFA7",
+                  "entry_id": 40663857,
+                  "properties": {
+                    "pdfsection_screen_entry_guid": "D11963FA3EB5554C6362F6DC7BCBD8DFA135EFA7",
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 274,
+                "resized": true
+              }, {
+                "headerText": "Qty",
+                "values": [{
+                  "entry_type_id": 1,
+                  "text": "Qty",
+                  "entry_guid": "8FBF47EF01165AC90D54D9F37E149C3DF0E660BD",
+                  "entry_id": 40663854,
+                  "properties": {
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 80,
+                "resized": true
+              }, {
+                "headerText": "Cost",
+                "values": [{
+                  "entry_type_id": 2,
+                  "text": "Cost",
+                  "entry_guid": "DD768D5BC569C4559E5307F24924A05555B8E87E",
+                  "entry_id": 40663855,
+                  "properties": {
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 129,
+                "resized": true
+              }, {
+                "headerText": "Total",
+                "values": [{
+                  "entry_type_id": 21,
+                  "text": "Total",
+                  "entry_guid": "3292704D98944E8388A417EC41463FD1AD9209FC",
+                  "entry_id": 40663856,
+                  "properties": {
+                    "useGlobalProperty": false,
+                    "globalStyle": {
+                      "general": {
+                        "font_family": "Arial",
+                        "text_color": "#000000",
+                        "text_size": "12",
+                        "vertical_spacing": "1"
+                      },
+                      "column": {
+                        "padding": {
+                          "top": "8",
+                          "right": "8",
+                          "bottom": "8",
+                          "left": "8"
+                        },
+                        "borders": {
+                          "direction": {
+                            "left": false,
+                            "top": false,
+                            "right": false,
+                            "bottom": false
+                          },
+                          "color": "#000000",
+                          "style": "solid",
+                          "width": "1"
+                        },
+                        "bg_color": "#ffffff"
+                      },
+                      "fields": {
+                        "borders": {
+                          "left": false,
+                          "top": false,
+                          "right": false,
+                          "bottom": false
+                        },
+                        "show_label": false,
+                        "line_height": "143%"
+                      },
+                      "table": {
+                        "header": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#6f7e91",
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "text_align": "left",
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        },
+                        "rows": {
+                          "useGlobalProperty": true,
+                          "bg_color": "#ffffff",
+                          "padding": {
+                            "left": "2",
+                            "right": "2"
+                          },
+                          "borders": {
+                            "left": true,
+                            "top": true,
+                            "right": true,
+                            "bottom": true
+                          },
+                          "text_align": "left",
+                          "override_alignment": false,
+                          "general": {
+                            "font_family": "Arial",
+                            "text_color": "#000000",
+                            "text_size": "12",
+                            "vertical_spacing": "1"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }],
+                "width": 113
+              }],
+              "properties": {
+                "response_groups": true
+              }
+            },
+            "entry_guid": null,
+            "properties": {
+              "globalStyle": {
+                "table": {
+                  "header": {
+                    "useGlobalProperty": true,
+                    "bg_color": "#6f7e91",
+                    "borders": {
+                      "left": true,
+                      "top": true,
+                      "right": true,
+                      "bottom": true
+                    },
+                    "padding": {
+                      "left": "2",
+                      "right": "2"
+                    },
+                    "text_align": "left",
+                    "general": {
+                      "font_family": "Arial",
+                      "text_color": "#000000",
+                      "text_size": "12",
+                      "vertical_spacing": "1"
+                    }
+                  },
+                  "rows": {
+                    "useGlobalProperty": true,
+                    "bg_color": "#ffffff",
+                    "padding": {
+                      "left": "2",
+                      "right": "2"
+                    },
+                    "borders": {
+                      "left": true,
+                      "top": true,
+                      "right": true,
+                      "bottom": true
+                    },
+                    "text_align": "left",
+                    "override_alignment": false,
+                    "general": {
+                      "font_family": "Arial",
+                      "text_color": "#000000",
+                      "text_size": "12",
+                      "vertical_spacing": "1"
+                    }
+                  }
+                }
+              }
+            }
+          }]
+        }],
+        "properties": {
+          "list": true
+        }
+      }, {
+        "id": 145973,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302489,
+          "style": {
+            "width": 100,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181273,
+            "entry_type_id": 9999,
+            "text": "Invoice Summary",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "pdfsection_screen_entry_guid": "BCBA7DFC64F4AECD80763B0F8AFEF8AAF51F6E58",
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "bg_color": "#ffffff",
+                "font_style": "normal",
+                "font_weight": "bold",
+                "text_decoration": "none",
+                "text_align": "left"
+              },
+              "link": ""
+            }
+          }]
+        }],
+        "properties": {}
+      }, {
+        "id": 145974,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302490,
+          "style": {
+            "width": 25,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181274,
+            "entry_type_id": 20,
+            "text": "Invoice Item Total",
+            "entry_guid": "BCBA7DFC64F4AECD80763B0F8AFEF8AAF51F6E58",
+            "entry_id": 40663858,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }, {
+            "id": 1181277,
+            "entry_type_id": 21,
+            "text": "Tax Amount",
+            "entry_guid": "E87120E73769346FB6459FB9E3A78D951955CA47",
+            "entry_id": 40663862,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }, {
+            "id": 1181280,
+            "entry_type_id": 99,
+            "text": "Vendor Signature",
+            "entry_guid": "D9B8E2B7D983971F5FC40DAD02059CAB0E96B23E",
+            "entry_id": 40663867,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }]
+        }, {
+          "id": 302491,
+          "style": {
+            "width": 25,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181283,
+            "entry_type_id": 2,
+            "text": "Other Costs",
+            "entry_guid": "58E0EF25AD592B5BD6BC52E8D3363B8F50DC1595",
+            "entry_id": 40663859,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }, {
+            "id": 1181286,
+            "entry_type_id": 2,
+            "text": "Discount",
+            "entry_guid": "952AE9BB0634D90E7601CD15DE81BC2D3AAFC9DF",
+            "entry_id": 40663864,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }, {
+            "id": 1181289,
+            "entry_type_id": 3,
+            "text": "Date",
+            "entry_guid": "D586B6533D6EF84334CFA32610D13F20BAB59AA4",
+            "entry_id": 40663868,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }]
+        }, {
+          "id": 302492,
+          "style": {
+            "width": 25,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181292,
+            "entry_type_id": 21,
+            "text": "Subtotal",
+            "entry_guid": "4834144509271ECCEB542300015BB1BF23B19DEF",
+            "entry_id": 40663860,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }, {
+            "id": 1181295,
+            "entry_type_id": 21,
+            "text": "TOTAL",
+            "entry_guid": "6CF0712A976DDCC7FF56D3AF21E7264C95B7FEA9",
+            "entry_id": 40663865,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "bg_color": "#ffffff",
+                "font_style": "normal",
+                "font_weight": "bold",
+                "text_decoration": "none",
+                "text_align": "left"
+              }
+            }
+          }, {
+            "id": 1181298,
+            "entry_type_id": 99,
+            "text": "Customer Signature",
+            "entry_guid": "288CCBCD8F8CD01D880B07707EBA4581D0C3D00E",
+            "entry_id": 40663869,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }]
+        }, {
+          "id": 302493,
+          "style": {
+            "width": 25,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181301,
+            "entry_type_id": 2,
+            "text": "Tax %",
+            "entry_guid": "DE375493849C91E5C5EF7992A0F053F3AA397A35",
+            "entry_id": 40663861,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }, {
+            "id": 1181304,
+            "entry_type_id": 8,
+            "text": "Other Comments",
+            "entry_guid": "8FA2799FFCC0A1410A8F4CE60C425E50E8035252",
+            "entry_id": 40663866,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }, {
+            "id": 1181307,
+            "entry_type_id": 3,
+            "text": "Date",
+            "entry_guid": "F57AAAE4A67AC37C76B86811E7CE1F6087B1DC7D",
+            "entry_id": 40663870,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {},
+              "localStyle": {}
+            }
+          }]
+        }],
+        "properties": {}
+      }]
+    }],
+    "headers": [{
+      "type": "PdfTemplateHeader",
+      "page_number": null,
+      "sections": [{
+        "id": 145969,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302480,
+          "style": {
+            "width": 18.97,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181227,
+            "entry_type_id": 9997,
+            "text": null,
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Helvetica",
+                  "text_color": "#000000",
+                  "text_size": "14",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {},
+              "link": ""
+            }
+          }]
+        }, {
+          "id": 302481,
+          "style": {
+            "width": 62.06,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181228,
+            "entry_type_id": 9999,
+            "text": "Company Name<div>Address</div><div>City, State 12345</div>",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "text_align": "center"
+              },
+              "link": ""
+            }
+          }]
+        }, {
+          "id": 302482,
+          "style": {
+            "width": 18.97,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181229,
+            "entry_type_id": 9999,
+            "text": "Invoice",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Arial",
+                  "text_color": "#000000",
+                  "text_size": "12",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "font_weight": "bold",
+                "text_align": "right"
+              },
+              "link": ""
+            }
+          }, {
+            "id": 1181230,
+            "entry_type_id": 9995,
+            "text": "No.",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Helvetica",
+                  "text_color": "#000000",
+                  "text_size": "14",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "font_weight": "normal",
+                "text_align": "right"
+              }
+            }
+          }]
+        }],
+        "properties": {
+          "height": "1.25"
+        }
+      }],
+      "default_data": {
+        "logo_url": "/company_images/2062",
+        "app_name": "Invoice - GC10 - Global Styles",
+        "header_info": "GoCanvas\n\n"
+      }
+    }],
+    "footers": [{
+      "type": "PdfTemplateFooter",
+      "page_number": null,
+      "sections": [{
+        "id": 145975,
+        "width": 100,
+        "selected": false,
+        "columns": [{
+          "id": 302494,
+          "style": {
+            "width": 100,
+            "padding": {
+              "top": "8",
+              "right": "8",
+              "bottom": "8",
+              "left": "8"
+            },
+            "borders": {
+              "direction": {
+                "left": false,
+                "top": false,
+                "right": false,
+                "bottom": false
+              },
+              "color": "#000000",
+              "style": "solid",
+              "width": "1"
+            }
+          },
+          "resized": false,
+          "modified": false,
+          "width_lended": 0,
+          "fields": [{
+            "id": 1181310,
+            "entry_type_id": 9996,
+            "text": "",
+            "entry_guid": null,
+            "entry_id": null,
+            "properties": {
+              "useGlobalProperty": true,
+              "globalStyle": {
+                "general": {
+                  "font_family": "Helvetica",
+                  "text_color": "#000000",
+                  "text_size": "14",
+                  "vertical_spacing": "1"
+                },
+                "fields": {
+                  "borders": {
+                    "left": false,
+                    "top": false,
+                    "right": false,
+                    "bottom": false
+                  },
+                  "show_label": true,
+                  "line_height": "143%"
+                }
+              },
+              "localStyle": {
+                "bg_color": "#ffffff",
+                "font_style": "normal",
+                "font_weight": "normal",
+                "text_decoration": "none",
+                "text_align": "right"
+              },
+              "links": [{
+                "name": "Facebook",
+                "placeholder": "Enter Facebook URL",
+                "url": "https://www.facebook.com/pages/Canvas/247055383245?ref=mf",
+                "isSelected": false
+              }, {
+                "name": "Twitter",
+                "placeholder": "Enter Twitter Handle",
+                "url": "https://twitter.com/GoCanvas",
+                "isSelected": false
+              }, {
+                "name": "LinkedIn",
+                "placeholder": "Enter LinkedIn URL",
+                "url": "https://www.linkedin.com/company/canvas",
+                "isSelected": false
+              }, {
+                "name": "Angie's List",
+                "placeholder": "Enter Angie's List URL",
+                "url": "https://www.angieslist.com/",
+                "isSelected": false
+              }, {
+                "name": "Google Reviews",
+                "placeholder": "Enter Google Reviews URL",
+                "url": "https://www.google.com/",
+                "isSelected": false
+              }, {
+                "name": "Home Advisor",
+                "placeholder": "Enter Home Advisor URL",
+                "url": "http://www.homeadvisor.com/",
+                "isSelected": false
+              }, {
+                "name": "Yelp",
+                "placeholder": "Enter Yelp URL",
+                "url": "https://www.yelp.com/",
+                "isSelected": false
+              }]
+            }
+          }]
+        }],
+        "properties": {}
+      }]
+    }]
+  },
+  "global_properties": {
+    "general": {
+      "font_family": "Arial",
+      "text_color": "#000000",
+      "text_size": "12",
+      "vertical_spacing": "1"
+    },
+    "column": {
+      "padding": {
+        "top": "8",
+        "right": "8",
+        "bottom": "8",
+        "left": "8"
+      },
+      "borders": {
+        "direction": {
+          "left": false,
+          "top": false,
+          "right": false,
+          "bottom": false
+        },
+        "color": "#000000",
+        "style": "solid",
+        "width": "1"
+      },
+      "bg_color": "#ffffff"
+    },
+    "fields": {
+      "borders": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "show_label": true,
+      "line_height": "143%"
+    },
+    "table": {
+      "header": {
+        "useGlobalProperty": true,
+        "bg_color": "#6f7e91",
+        "borders": {
+          "left": true,
+          "top": true,
+          "right": true,
+          "bottom": true
+        },
+        "padding": {
+          "left": "2",
+          "right": "2"
+        },
+        "text_align": "left",
+        "general": {
+          "font_family": "Arial",
+          "text_color": "#000000",
+          "text_size": "12",
+          "vertical_spacing": "1"
+        }
+      },
+      "rows": {
+        "useGlobalProperty": true,
+        "bg_color": "#ffffff",
+        "padding": {
+          "left": "2",
+          "right": "2"
+        },
+        "borders": {
+          "left": true,
+          "top": true,
+          "right": true,
+          "bottom": true
+        },
+        "text_align": "left",
+        "override_alignment": false,
+        "general": {
+          "font_family": "Arial",
+          "text_color": "#000000",
+          "text_size": "12",
+          "vertical_spacing": "1"
+        }
+      }
+    }
+  }
+}    *0D                           æ™
