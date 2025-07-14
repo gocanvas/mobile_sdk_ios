@@ -304,3 +304,6 @@ formLauncher.addConfigValue(key: "MOBILE_INTERFACE_THEME", value: UIUserInterfac
 - `gc_sdk_color_secondary_container`
 - `gc_sdk_color`
 
+### Strings 
+
+You can update the `Submit` button text by overriding the key ***submit_button_title*** into your `Localizable.xcstrings` file.
