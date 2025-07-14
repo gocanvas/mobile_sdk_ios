@@ -1,0 +1,437 @@
+bplist00Ò^FormDefinition]PDFDefinition_›<?xml version="1.0" encoding="UTF-8"?>
+<Form ID="612334" Name="Blank" Version="4" ImageID="" AllowEmail="2" Username="d001@gocanvas.com" Status="published" ShowMenu="0"  MobileBuilderEnabled="true"  RemRecall="1" Editable="3" ParentID="612331" WorkflowId="" CompressionQuality="80" CompressionDimension="800">
+  </Section>
+  <Departments>
+    
+  </Departments>
+  <Folders>
+  </Folders>
+</Form>
+</soap:Envelope>
+_#ô{
+	"id": 7234,
+	"form_id": 612383,
+	"orientation": "Portrait",
+	"creator_id": 3545,
+	"size": "us-letter",
+	"top_margin": 2,
+	"right_margin": 2,
+	"left_margin": 2,
+	"bottom_margin": 2,
+	"components": {
+		"pages": [{
+			"type": "PdfTemplatePage",
+			"page_number": 1,
+			"sections": []
+		}],
+		"headers": [{
+			"type": "PdfTemplateHeader",
+			"page_number": null,
+			"sections": [{
+				"id": 143711,
+				"width": 100,
+				"selected": false,
+				"columns": [{
+					"id": 298490,
+					"style": {
+						"width": 18.97,
+						"padding": {
+							"bottom": "8",
+							"top": "8",
+							"right": "8",
+							"left": "8"
+						},
+						"borders": {
+							"direction": {
+								"left": false,
+								"top": false,
+								"right": false,
+								"bottom": false
+							},
+							"style": "solid",
+							"width": "1",
+							"color": "#000000"
+						}
+					},
+					"resized": false,
+					"modified": false,
+					"width_lended": 0,
+					"fields": [{
+						"id": 1163763,
+						"entry_type_id": 9997,
+						"text": "",
+						"entry_guid": null,
+						"entry_id": null,
+						"properties": {
+							"globalStyle": {
+								"general": {
+									"vertical_spacing": "1",
+									"text_color": "#000000",
+									"text_size": "12",
+									"font_family": "Arial"
+								},
+								"fields": {
+									"borders": {
+										"left": false,
+										"top": false,
+										"right": false,
+										"bottom": false
+									},
+									"show_label": true,
+									"line_height": "143%"
+								}
+							},
+							"useGlobalProperty": true,
+							"image_guid": "",
+							"localStyle": {}
+						}
+					}]
+				}, {
+					"id": 298491,
+					"style": {
+						"width": 62.06,
+						"padding": {
+							"bottom": "8",
+							"top": "8",
+							"right": "8",
+							"left": "8"
+						},
+						"borders": {
+							"direction": {
+								"left": false,
+								"top": false,
+								"right": false,
+								"bottom": false
+							},
+							"style": "solid",
+							"width": "1",
+							"color": "#000000"
+						}
+					},
+					"resized": false,
+					"modified": false,
+					"width_lended": 0,
+					"fields": [{
+						"id": 1163764,
+						"entry_type_id": 9999,
+						"text": "Company Name<div>Address</div><div>City, State 12345</div>",
+						"entry_guid": null,
+						"entry_id": null,
+						"properties": {
+							"globalStyle": {
+								"general": {
+									"vertical_spacing": "1",
+									"text_color": "#000000",
+									"text_size": "12",
+									"font_family": "Arial"
+								},
+								"fields": {
+									"borders": {
+										"left": false,
+										"top": false,
+										"right": false,
+										"bottom": false
+									},
+									"show_label": true,
+									"line_height": "143%"
+								}
+							},
+							"localStyle": {
+								"text_align": "center"
+							},
+							"useGlobalProperty": true,
+							"link": ""
+						}
+					}]
+				}, {
+					"id": 298492,
+					"style": {
+						"width": 18.97,
+						"padding": {
+							"bottom": "8",
+							"top": "8",
+							"right": "8",
+							"left": "8"
+						},
+						"borders": {
+							"direction": {
+								"left": false,
+								"top": false,
+								"right": false,
+								"bottom": false
+							},
+							"style": "solid",
+							"width": "1",
+							"color": "#000000"
+						}
+					},
+					"resized": false,
+					"modified": false,
+					"width_lended": 0,
+					"fields": [{
+						"id": 1163765,
+						"entry_type_id": 9999,
+						"text": "Untitled Form",
+						"entry_guid": null,
+						"entry_id": null,
+						"properties": {
+							"globalStyle": {
+								"general": {
+									"vertical_spacing": "1",
+									"text_color": "#000000",
+									"text_size": "12",
+									"font_family": "Arial"
+								},
+								"fields": {
+									"borders": {
+										"left": false,
+										"top": false,
+										"right": false,
+										"bottom": false
+									},
+									"show_label": true,
+									"line_height": "143%"
+								}
+							},
+							"localStyle": {
+								"text_align": "right",
+								"font_weight": "bold"
+							},
+							"useGlobalProperty": true,
+							"link": ""
+						}
+					}, {
+						"id": 1163766,
+						"entry_type_id": 9995,
+						"text": "No.",
+						"entry_guid": null,
+						"entry_id": null,
+						"properties": {
+							"globalStyle": {
+								"general": {
+									"vertical_spacing": "1",
+									"text_color": "#000000",
+									"text_size": "12",
+									"font_family": "Arial"
+								},
+								"fields": {
+									"borders": {
+										"left": false,
+										"top": false,
+										"right": false,
+										"bottom": false
+									},
+									"show_label": true,
+									"line_height": "143%"
+								}
+							},
+							"useGlobalProperty": true,
+							"localStyle": {
+								"text_align": "right",
+								"font_weight": "normal"
+							}
+						}
+					}]
+				}],
+				"properties": {
+					"height": "1.25"
+				}
+			}],
+			"default_data": {
+				"logo_url": "/company_images/2129",
+				"app_name": "Untitled Form",
+				"header_info": "Company Name\n123 Main St\nMy City, My State, 12345"
+			}
+		}],
+		"footers": [{
+			"type": "PdfTemplateFooter",
+			"page_number": null,
+			"sections": [{
+				"id": 143712,
+				"width": 100,
+				"selected": false,
+				"columns": [{
+					"id": 298493,
+					"style": {
+						"width": 100,
+						"padding": {
+							"bottom": "8",
+							"top": "8",
+							"right": "8",
+							"left": "8"
+						},
+						"borders": {
+							"direction": {
+								"left": false,
+								"top": false,
+								"right": false,
+								"bottom": false
+							},
+							"style": "solid",
+							"width": "1",
+							"color": "#000000"
+						}
+					},
+					"resized": false,
+					"modified": false,
+					"width_lended": 0,
+					"fields": [{
+						"id": 1163769,
+						"entry_type_id": 9996,
+						"text": "",
+						"entry_guid": null,
+						"entry_id": null,
+						"properties": {
+							"globalStyle": {
+								"general": {
+									"vertical_spacing": "1",
+									"text_color": "#000000",
+									"text_size": "12",
+									"font_family": "Arial"
+								},
+								"fields": {
+									"borders": {
+										"left": false,
+										"top": false,
+										"right": false,
+										"bottom": false
+									},
+									"show_label": true,
+									"line_height": "143%"
+								}
+							},
+							"links": [{
+								"isSelected": false,
+								"placeholder": "Enter Facebook URL",
+								"name": "Facebook",
+								"url": "https://www.facebook.com/pages/Canvas/247055383245?ref=mf"
+							}, {
+								"isSelected": false,
+								"placeholder": "Enter Twitter Handle",
+								"name": "Twitter",
+								"url": "https://twitter.com/GoCanvas"
+							}, {
+								"isSelected": false,
+								"placeholder": "Enter LinkedIn URL",
+								"name": "LinkedIn",
+								"url": "https://www.linkedin.com/company/canvas"
+							}, {
+								"isSelected": false,
+								"placeholder": "Enter Angie's List URL",
+								"name": "Angie's List",
+								"url": "https://www.angieslist.com/"
+							}, {
+								"isSelected": false,
+								"placeholder": "Enter Google Reviews URL",
+								"name": "Google Reviews",
+								"url": "https://www.google.com/"
+							}, {
+								"isSelected": false,
+								"placeholder": "Enter Home Advisor URL",
+								"name": "Home Advisor",
+								"url": "http://www.homeadvisor.com/"
+							}, {
+								"isSelected": false,
+								"placeholder": "Enter Yelp URL",
+								"name": "Yelp",
+								"url": "https://www.yelp.com/"
+							}],
+							"useGlobalProperty": true,
+							"localStyle": {
+								"text_align": "right",
+								"font_style": "normal",
+								"font_weight": "normal",
+								"bg_color": "#ffffff",
+								"text_decoration": "none"
+							}
+						}
+					}]
+				}],
+				"properties": {}
+			}]
+		}]
+	},
+	"global_properties": {
+		"general": {
+			"font_family": "Arial",
+			"text_color": "#000000",
+			"text_size": "12",
+			"vertical_spacing": "1"
+		},
+		"column": {
+			"padding": {
+				"top": "8",
+				"right": "8",
+				"bottom": "8",
+				"left": "8"
+			},
+			"borders": {
+				"direction": {
+					"left": false,
+					"top": false,
+					"right": false,
+					"bottom": false
+				},
+				"color": "#000000",
+				"style": "solid",
+				"width": "1"
+			},
+			"bg_color": "#ffffff"
+		},
+		"fields": {
+			"borders": {
+				"left": false,
+				"top": false,
+				"right": false,
+				"bottom": false
+			},
+			"show_label": true,
+			"line_height": "143%"
+		},
+		"table": {
+			"header": {
+				"useGlobalProperty": true,
+				"bg_color": "#6f7e91",
+				"borders": {
+					"left": true,
+					"top": true,
+					"right": true,
+					"bottom": true
+				},
+				"padding": {
+					"left": "2",
+					"right": "2"
+				},
+				"text_align": "left",
+				"general": {
+					"font_family": "Arial",
+					"text_color": "#000000",
+					"text_size": "12",
+					"vertical_spacing": "1"
+				}
+			},
+			"rows": {
+				"useGlobalProperty": true,
+				"bg_color": "#ffffff",
+				"padding": {
+					"left": "2",
+					"right": "2"
+				},
+				"borders": {
+					"left": true,
+					"top": true,
+					"right": true,
+					"bottom": true
+				},
+				"text_align": "left",
+				"override_alignment": false,
+				"general": {
+					"font_family": "Arial",
+					"text_color": "#000000",
+					"text_size": "12",
+					"vertical_spacing": "1"
+				}
+			}
+		}
+	}
+}    *É                           %Á

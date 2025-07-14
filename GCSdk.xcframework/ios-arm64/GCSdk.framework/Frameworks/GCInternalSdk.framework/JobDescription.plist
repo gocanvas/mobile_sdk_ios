@@ -1,0 +1,739 @@
+bplist00“^FormDefinition]PDFDefinition_b<?xml version="1.0" encoding="UTF-8"?>
+<Form ID="611972" Name="Job Description" Version="1" ImageID="" AllowEmail="2" Username="diego_builder@gocanvas.com" Status="published" ShowMenu="0"  MobileBuilderEnabled="false"  RemRecall="1" Editable="3" ParentID="611972" WorkflowId="" CompressionQuality="80" CompressionDimension="800">
+  <Section ID="5833801" Name="Job Description" Type="0">
+    <Sheet ID="6008123" Name="Job Description" Type="1" MultiSec="-1" AllowDuplicate="false" DisplayEntryID="" Style="0">
+      <Entry ID="40652303" Label="Inspector Name" Length="" Min="" Max="" Default="" Required="false" Type="0" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "585B0DD6FC27EE324B75AB0E404772C317B4DDA2">
+      </Entry>
+      <Entry ID="40652304" Label="Job" Length="" Min="" Max="" Default="" Required="false" Type="5" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="3" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "B3CE7FB55362418145EDF67B36F6579598861117">
+        <Value Value="" />
+        <Value Value="Estimate" />
+        <Value Value="Inspection" />
+        <Value Value="Install" />
+        <Value Value="Service" />
+      </Entry>
+      <Entry ID="40652305" Label="Weather Condition" Length="" Min="" Max="" Default="" Required="false" Type="5" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="3" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "3A7559AAF21B7536981AE78D50127C19FF8EBA66">
+        <Value Value="" />
+        <Value Value="Clear" />
+        <Value Value="Cloudy" />
+        <Value Value="Fog" />
+        <Value Value="Hail" />
+        <Value Value="Heavy Rain" />
+        <Value Value="Misty" />
+        <Value Value="Partly Cloudy" />
+        <Value Value="Rain" />
+        <Value Value="Snow" />
+        <Value Value="Sunny" />
+        <Value Value="Windy" />
+      </Entry>
+      <Entry ID="40652306" Label="Description of Work" Length="" Min="" Max="" Default="" Required="false" Type="8" ReceiptLabel="" Mask="" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "87B04F4FB01720AF4BB03C192D2AE69FEF02B426">
+      </Entry>
+      <Entry ID="40652307" Label="Image 01" Length="" Min="" Max="" Default="" Required="false" Type="10" ReceiptLabel="" Mask="00" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "8291793495166680E9301FE9F1D0A1279BAD0D45">
+      </Entry>
+      <Entry ID="40652308" Label="Image 02" Length="" Min="" Max="" Default="" Required="false" Type="10" ReceiptLabel="" Mask="00" SourceEntryId=""  RefDataID="" RefDataCol="" RefEntryID="" ReadOnly="false" Visible="true" Style="0" GPSTimeout="0" GPSAccuracy="0" GPSAccuracyRequired="" BarcodeEnabled="false" Guid = "891EDA95D115D2ED5730F9925375635EB25D5FFD">
+      </Entry>
+    </Sheet>
+  </Section>
+  <Departments>
+    
+  </Departments>
+  <Folders>
+  </Folders>
+</Form>
+_?Ì{
+	"id": 6746,
+	"form_id": 611972,
+	"orientation": "Portrait",
+	"creator_id": 3478,
+	"size": "us-letter",
+	"top_margin": 2,
+	"right_margin": 2,
+	"left_margin": 2,
+	"bottom_margin": 2,
+	"components": {
+		"pages": [
+			{
+				"type": "PdfTemplatePage",
+				"page_number": 1,
+				"sections": [
+					{
+						"id": 140099,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 292016,
+								"style": {
+									"width": 100,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132531,
+										"entry_type_id": 9999,
+										"text": "Job Description",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"pdfsection_screen_entry_guid": "585B0DD6FC27EE324B75AB0E404772C317B4DDA2",
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"bg_color": "#ffffff",
+												"font_style": "normal",
+												"font_weight": "bold",
+												"text_decoration": "none",
+												"text_align": "left"
+											},
+											"link": ""
+										}
+									}
+								]
+							}
+						],
+						"properties": {}
+					},
+					{
+						"id": 140100,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 292017,
+								"style": {
+									"width": 33.333,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132532,
+										"entry_type_id": 0,
+										"text": "Inspector Name",
+										"entry_guid": "585B0DD6FC27EE324B75AB0E404772C317B4DDA2",
+										"entry_id": 40652303,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									},
+									{
+										"id": 1132535,
+										"entry_type_id": 8,
+										"text": "Description of Work",
+										"entry_guid": "87B04F4FB01720AF4BB03C192D2AE69FEF02B426",
+										"entry_id": 40652306,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									}
+								]
+							},
+							{
+								"id": 292018,
+								"style": {
+									"width": 33.333,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132538,
+										"entry_type_id": 5,
+										"text": "Job",
+										"entry_guid": "B3CE7FB55362418145EDF67B36F6579598861117",
+										"entry_id": 40652304,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									},
+									{
+										"id": 1132541,
+										"entry_type_id": 10,
+										"text": "Image 01",
+										"entry_guid": "8291793495166680E9301FE9F1D0A1279BAD0D45",
+										"entry_id": 40652307,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									}
+								]
+							},
+							{
+								"id": 292019,
+								"style": {
+									"width": 33.334,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132544,
+										"entry_type_id": 5,
+										"text": "Weather Condition",
+										"entry_guid": "3A7559AAF21B7536981AE78D50127C19FF8EBA66",
+										"entry_id": 40652305,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									},
+									{
+										"id": 1132547,
+										"entry_type_id": 10,
+										"text": "Image 02",
+										"entry_guid": "891EDA95D115D2ED5730F9925375635EB25D5FFD",
+										"entry_id": 40652308,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {},
+											"localStyle": {}
+										}
+									}
+								]
+							}
+						],
+						"properties": {}
+					}
+				]
+			}
+		],
+		"headers": [
+			{
+				"type": "PdfTemplateHeader",
+				"page_number": null,
+				"sections": [
+					{
+						"id": 140098,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 292013,
+								"style": {
+									"width": 18.97,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132525,
+										"entry_type_id": 9997,
+										"text": null,
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {},
+											"link": ""
+										}
+									}
+								]
+							},
+							{
+								"id": 292014,
+								"style": {
+									"width": 62.06,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132526,
+										"entry_type_id": 9999,
+										"text": "Company Name<div>Address</div><div>City, State 12345</div>",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"text_align": "center"
+											},
+											"link": ""
+										}
+									}
+								]
+							},
+							{
+								"id": 292015,
+								"style": {
+									"width": 18.97,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132527,
+										"entry_type_id": 9999,
+										"text": "Job Description",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"font_weight": "bold",
+												"text_align": "right"
+											},
+											"link": ""
+										}
+									},
+									{
+										"id": 1132528,
+										"entry_type_id": 9995,
+										"text": "No.",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"font_weight": "normal",
+												"text_align": "right"
+											}
+										}
+									}
+								]
+							}
+						],
+						"properties": {
+							"height": "1.25"
+						}
+					}
+				],
+				"default_data": {
+					"logo_url": "/company_images/2062",
+					"app_name": "Job Description",
+					"header_info": "GoCanvas\n\n"
+				}
+			}
+		],
+		"footers": [
+			{
+				"type": "PdfTemplateFooter",
+				"page_number": null,
+				"sections": [
+					{
+						"id": 140101,
+						"width": 100,
+						"selected": false,
+						"columns": [
+							{
+								"id": 292020,
+								"style": {
+									"width": 100,
+									"padding": {
+										"top": "8",
+										"right": "8",
+										"bottom": "8",
+										"left": "8"
+									},
+									"borders": {
+										"direction": {
+											"left": false,
+											"top": false,
+											"right": false,
+											"bottom": false
+										},
+										"color": "#000000",
+										"style": "solid",
+										"width": "1"
+									}
+								},
+								"resized": false,
+								"modified": false,
+								"width_lended": 0,
+								"fields": [
+									{
+										"id": 1132550,
+										"entry_type_id": 9996,
+										"text": "",
+										"entry_guid": null,
+										"entry_id": null,
+										"properties": {
+											"useGlobalProperty": true,
+											"globalStyle": {
+												"general": {
+													"font_family": "Arial",
+													"text_color": "#000000",
+													"text_size": "12",
+													"vertical_spacing": "1"
+												},
+												"fields": {
+													"borders": {
+														"left": false,
+														"top": false,
+														"right": false,
+														"bottom": false
+													},
+													"show_label": true,
+													"line_height": "143%"
+												}
+											},
+											"localStyle": {
+												"bg_color": "#ffffff",
+												"font_style": "normal",
+												"font_weight": "normal",
+												"text_decoration": "none",
+												"text_align": "right"
+											},
+											"links": [
+												{
+													"name": "Facebook",
+													"placeholder": "Enter Facebook URL",
+													"url": "https://www.facebook.com/pages/Canvas/247055383245?ref=mf",
+													"isSelected": false
+												},
+												{
+													"name": "Twitter",
+													"placeholder": "Enter Twitter Handle",
+													"url": "https://twitter.com/GoCanvas",
+													"isSelected": false
+												},
+												{
+													"name": "LinkedIn",
+													"placeholder": "Enter LinkedIn URL",
+													"url": "https://www.linkedin.com/company/canvas",
+													"isSelected": false
+												},
+												{
+													"name": "Angie's List",
+													"placeholder": "Enter Angie's List URL",
+													"url": "https://www.angieslist.com/",
+													"isSelected": false
+												},
+												{
+													"name": "Google Reviews",
+													"placeholder": "Enter Google Reviews URL",
+													"url": "https://www.google.com/",
+													"isSelected": false
+												},
+												{
+													"name": "Home Advisor",
+													"placeholder": "Enter Home Advisor URL",
+													"url": "http://www.homeadvisor.com/",
+													"isSelected": false
+												},
+												{
+													"name": "Yelp",
+													"placeholder": "Enter Yelp URL",
+													"url": "https://www.yelp.com/",
+													"isSelected": false
+												}
+											]
+										}
+									}
+								]
+							}
+						],
+						"properties": {}
+					}
+				]
+			}
+		]
+	},
+	"global_properties": {
+		"general": {
+			"font_family": "Arial",
+			"text_color": "#000000",
+			"text_size": "12",
+			"vertical_spacing": "1"
+		},
+		"column": {
+			"padding": {
+				"top": "8",
+				"right": "8",
+				"bottom": "8",
+				"left": "8"
+			},
+			"borders": {
+				"direction": {
+					"left": false,
+					"top": false,
+					"right": false,
+					"bottom": false
+				},
+				"color": "#000000",
+				"style": "solid",
+				"width": "1"
+			},
+			"bg_color": "#ffffff"
+		},
+		"fields": {
+			"borders": {
+				"left": false,
+				"top": false,
+				"right": false,
+				"bottom": false
+			},
+			"show_label": true,
+			"line_height": "143%"
+		},
+		"table": {
+			"header": {
+				"useGlobalProperty": true,
+				"bg_color": "#6f7e91",
+				"borders": {
+					"left": true,
+					"top": true,
+					"right": true,
+					"bottom": true
+				},
+				"padding": {
+					"left": "2",
+					"right": "2"
+				},
+				"text_align": "left",
+				"general": {
+					"font_family": "Arial",
+					"text_color": "#000000",
+					"text_size": "12",
+					"vertical_spacing": "1"
+				}
+			},
+			"rows": {
+				"useGlobalProperty": true,
+				"bg_color": "#ffffff",
+				"padding": {
+					"left": "2",
+					"right": "2"
+				},
+				"borders": {
+					"left": true,
+					"top": true,
+					"right": true,
+					"bottom": true
+				},
+				"text_align": "left",
+				"override_alignment": false,
+				"general": {
+					"font_family": "Arial",
+					"text_color": "#000000",
+					"text_size": "12",
+					"vertical_spacing": "1"
+				}
+			}
+		}
+	}
+}    *ê                           MÅ
