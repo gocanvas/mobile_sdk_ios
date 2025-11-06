@@ -17,7 +17,7 @@ permissions:
 jobs:
   release-package:
 
-    runs-on: macos-15
+    runs-on: macos-26
 
     steps:
       - name: Generate GitHub App Token
