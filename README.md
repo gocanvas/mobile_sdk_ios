@@ -4,6 +4,7 @@
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Branding](#Branding)
+- [Multi-Language](#Multi-Language)
 
 ## Installation
 
@@ -39,7 +40,8 @@ The application is required to populate their info.plist with the following fiel
 
 |Key | Recomended value |
 | -------------------------|-------------------------|
-|NSCameraUsageDescription|Our app uses the camera to capture photos that are uploaded as part of your submission. |
+|NSBluetoothAlwaysUsageDescription|Bluetooth is used to capture barcodes|
+|NSCameraUsageDescription|Our app uses the camera to capture photos that are uploaded as part of your submission.|
 |NSLocationWhenInUseUsageDescription|Allow location usage so when a GPS control is clicked the geolocation data can be saved and submitted.|
 |NSLocationAlwaysUsageDescription|Allow location usage so when a GPS control is clicked the geolocation data can be saved and submitted.|
 |NSMicrophoneUsageDescription|Microphone is used to capture videos during a submission.|
@@ -303,6 +305,42 @@ formLauncher.addConfigValue(key: "MOBILE_INTERFACE_THEME", value: UIUserInterfac
 - `gc_sdk_color_secondary_container_low`
 - `gc_sdk_color_secondary_container`
 - `gc_sdk_color`
+
+
+## Multi-Language
+
+Supported languages:
+
+| Language     | Language key  |
+|--------------|---------------|
+| English (US) | en            |
+| English (UK) | en-GB         |
+| Czech        | cs-CZ         |
+| Dutch        | nl-NL         |
+| French       | fr-FR         |
+| German       | de-DE         |
+| Hungarian    | hu-HU         |
+| Lithuanian   | lt-LT         |
+| Polish       | pl-PL         |
+| Portuguese   | pt-PT         |
+| Slovak       | sk-SK         |
+| Spanish      | es-ES         |
+| Turkish      | tr-TR         |
+| Finnish      | fi-FI         |
+
+Default language: `English-US`
+
+Configuration usage:
+```swift
+// provide in here desired language key 
+// e.g. "es", "es-ES", "es-US", "fr", "fr-FR", "fr-US"
+let languageCode = Locale.LanguageCode("es-ES") 
+formLauncher.addConfigValue(key: "MOBILE_LANGUAGE", value: language)
+```
+
+### Localizing Privacy Permission Strings
+
+If you want to translate also the privacy usage descriptions defined in your `Info.plist` (e.g., Camera, Location, Microphone access), you need to add the specific keys to your `InfoPlist.strings` file for each supported language. Needed privacy permissions for GoCanvas SDK are listed in [Usage](#Usage) section.
 
 ### Strings 
 
