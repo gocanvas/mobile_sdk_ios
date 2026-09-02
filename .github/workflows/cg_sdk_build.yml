@@ -50,6 +50,9 @@ jobs:
            else
               echo "Config file not present"
            fi
+           
+      - name: Select Xcode 26.2
+        run: sudo xcode-select -s /Applications/Xcode_26.2.app/Contents/Developer
 
       - name: Clear Derived Data
         run: |
