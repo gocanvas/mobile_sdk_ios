@@ -267,18 +267,17 @@ The `message` property retrurns the following error messages:
 
 The color system that can be used to create a color scheme that reflects your brand or style.
 
-|Color Name | Default |
-| -------------------------|--------------|
-|gc_sdk_color_primary|![#039de7](https://placehold.co/15x15/039de7/039de7.png) #039de7 |
-|gc_sdk_color_rating_selected|![#039de7](https://placehold.co/15x15/039de7/039de7.png) #039de7|
-|gc_sdk_color_secondary|![#00bfa5](https://placehold.co/15x15/00bfa5/00bfa5.png) #00bfa5|
-|gc_sdk_color_background|![#E9E9E9	](https://placehold.co/15x15/E9E9E9/E9E9E9.png) #E9E9E9|
-|gc_sdk_color_background_progress|![#DDDDDD](https://placehold.co/15x15/DDDDDD/DDDDDD.png) #DDDDDD|
-|gc_sdk_color_error|![#D73A31](https://placehold.co/15x15/D73A31/D73A31.png) #D73A31|
-|gc_sdk_color_secondary_container_high|![#BDBDBD](https://placehold.co/15x15/BDBDBD/BDBDBD.png) #BDBDBD|
-|gc_sdk_color_secondary_container_low|![#F1F1F5](https://placehold.co/15x15/F1F1F5/F1F1F5.png) #F1F1F5|
-|gc_sdk_color_secondary_container|![#fbfcfd](https://placehold.co/15x15/fbfcfd/fbfcfd.png) #fbfcfd|
-|gc_sdk_color|![#FFFFFF](https://placehold.co/15x15/FFFFFF/FFFFFF.png) #FFFFFF|
+|Color Name | Default (Light) | Default (Dark) |
+| -------------------------|--------------|--------------|
+| gc_sdk_color_primary                  | ![#0e51c4](https://placehold.co/15x15/0e51c4/0e51c4.png) #0e51c4 | ![#039de7](https://placehold.co/15x15/039de7/039de7.png) #039de7 |
+| gc_sdk_color_secondary                | ![#ecf1fa](https://placehold.co/15x15/ecf1fa/ecf1fa.png) #ecf1fa | ![#000d12](https://placehold.co/15x15/000d12/000d12.png) #000d12 |
+| gc_sdk_color_background               | ![#f5f6f6](https://placehold.co/15x15/f5f6f6/f5f6f6.png) #f5f6f6 | ![#151b1e](https://placehold.co/15x15/151b1e/151b1e.png) #151b1e |
+| gc_sdk_color_secondary_container      | ![#ffffff](https://placehold.co/15x15/ffffff/ffffff.png) #ffffff | ![#0b1215](https://placehold.co/15x15/0b1215/0b1215.png) #0b1215 |
+| gc_sdk_color_secondary_container_low  | ![#ecf1fa](https://placehold.co/15x15/ecf1fa/ecf1fa.png) #ecf1fa | ![#000d12](https://placehold.co/15x15/000d12/000d12.png) #000d12 |
+| gc_sdk_color_secondary_container_high | ![#fafafa](https://placehold.co/15x15/fafafa/fafafa.png) #fafafa | ![#10171a](https://placehold.co/15x15/10171a/10171a.png) #10171a |
+| gc_sdk_color_background_progress      | ![#d8d9da](https://placehold.co/15x15/d8d9da/d8d9da.png) #d8d9da | ![#32383a](https://placehold.co/15x15/32383a/32383a.png) #32383a |
+| gc_sdk_color_progress                 | ![#0e51c4](https://placehold.co/15x15/0e51c4/0e51c4.png) #0e51c4 | ![#039de7](https://placehold.co/15x15/039de7/039de7.png) #039de7 |
+| gc_sdk_color_error                    | ![#c40e51](https://placehold.co/15x15/c40e51/c40e51.png) #c40e51 | ![#e63a79](https://placehold.co/15x15/e63a79/e63a79.png) #e63a79 |
  
 By overriding these color attributes, you can easily change the style of the customizable components used by the sdk.
 
@@ -296,14 +295,13 @@ formLauncher.addConfigValue(key: "MOBILE_INTERFACE_THEME", value: UIUserInterfac
 
 2. In order to use your color as the theme for the form flow, a `Color Set` must be added to any `xcasset` available in your target with the following names:
 - `gc_sdk_color_primary`
-- `gc_sdk_color_rating_selected`
 - `gc_sdk_color_secondary`
-- `gc_sdk_color_background`
-- `gc_sdk_color_background_progress`
-- `gc_sdk_color_error`
-- `gc_sdk_color_secondary_container_high`
-- `gc_sdk_color_secondary_container_low`
 - `gc_sdk_color_secondary_container`
+- `gc_sdk_color_secondary_container_low`
+- `gc_sdk_color_secondary_container_high`
+- `gc_sdk_color_background_progress`
+- `gc_sdk_color_background`
+- `gc_sdk_color_progress`
 - `gc_sdk_color`
 
 
@@ -311,22 +309,31 @@ formLauncher.addConfigValue(key: "MOBILE_INTERFACE_THEME", value: UIUserInterfac
 
 Supported languages:
 
-| Language     | Language key  |
-|--------------|---------------|
-| English (US) | en            |
-| English (UK) | en-GB         |
-| Czech        | cs-CZ         |
-| Dutch        | nl-NL         |
-| French       | fr-FR         |
-| German       | de-DE         |
-| Hungarian    | hu-HU         |
-| Lithuanian   | lt-LT         |
-| Polish       | pl-PL         |
-| Portuguese   | pt-PT         |
-| Slovak       | sk-SK         |
-| Spanish      | es-ES         |
-| Turkish      | tr-TR         |
-| Finnish      | fi-FI         |
+| Language                | Language key    |
+|-------------------------|-----------------|
+| English (US)            | en              |
+| English (UK)            | en-GB           |
+| Chinese (Simplified)    | zh-CN           |
+| Chinese (Traditional)   | zh-TW           |
+| Czech                   | cs-CZ           |
+| Danish                  | da-DK           |
+| Dutch                   | nl-NL           |
+| Finnish                 | fi-FI           |
+| French                  | fr-FR           |
+| French (Canada)         | fr-CA           |
+| German                  | de-DE           |
+| Hindi                   | hi-IN           |
+| Hungarian               | hu-HU           |
+| Lithuanian              | lt-LT           |
+| Malay                   | ms-MY           |
+| Norwegian (Bokmål)      | nb-NO           |
+| Polish                  | pl-PL           |
+| Portuguese              | pt-PT           |
+| Slovak                  | sk-SK           |
+| Spanish                 | es-ES           |
+| Spanish (Latin America) | es-419          |
+| Swedish                 | sv-SE           |
+| Turkish                 | tr-TR           |
 
 Default language: `English-US`
 
