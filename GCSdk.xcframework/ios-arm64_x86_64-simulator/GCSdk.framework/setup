@@ -1,0 +1,86 @@
+#!/bin/bash
+
+set -ex
+
+# Unpack frameworks
+FRAMEWORK_NAME="GCSdk"
+INTERNAL_FRAMEWORK_NAME="GCInternalSdk"
+MAIN_FRAMEWORKS_DIR="$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH"
+NESTED_FRAMEWORKS_DIR="$MAIN_FRAMEWORKS_DIR/$FRAMEWORK_NAME.framework/Frameworks"
+INTERNAL_NESTED_FRAMEWORKS_DIR="$NESTED_FRAMEWORKS_DIR/$INTERNAL_FRAMEWORK_NAME.framework/Frameworks"
+
+handleNestedFrameworks() {
+  if [ -d "$1" ]; then
+    # Handle all nested frameworks that are fat frameworks
+    find "$1" -name '*.framework' ! -path '*.xcframework/*' -type d | while read -r FRAMEWORK; do
+      rm -rf "$2/$(basename "$FRAMEWORK")/"
+      mv -f "$FRAMEWORK/" "$2"
+    done
+
+    # Handle all nested frameworks that are xcframeworks
+    find "$1" -name '*.xcframework' -type d | while read -r XCFRAMEWORK; do
+
+      # $SDK_NAMES is an environment variable set by the xcodebuild process
+      for SDK in $SDK_NAMES; do
+
+        # Only allow iphoneos and iphonesimulator SDKs
+        if ! [[ $SDK =~ .*iphone.* ]]; then
+          echo "Unable to setup $(basename "$XCFRAMEWORK"). Only building against iOS SDKs is supported at the moment."
+          exit 1
+        fi
+
+        FIND_COMMAND="find '$XCFRAMEWORK' -name '*.framework' -type d"
+        if [[ $SDK =~ .*simulator.* ]]; then
+          FIND_COMMAND="$FIND_COMMAND -path '*-simulator/*'"
+        else
+          FIND_COMMAND="$FIND_COMMAND ! -path '*-simulator/*'"
+        fi
+
+        eval "$FIND_COMMAND" | while read -r ARCH_FRAMEWORK; do
+          rm -rf "$2/$(basename "$ARCH_FRAMEWORK")/"
+          mv -f "$ARCH_FRAMEWORK/" "$2"
+          rm -rf "$(dirname "$ARCH_FRAMEWORK")"
+        done
+      done
+
+      # Cleanup unused SDK slices of xcframework
+      rm -rf "$XCFRAMEWORK"
+    done
+
+    # If the nested framework directory does not contain any further framework binaries then clean it up
+    if [ -z "$(find "$1" -name "*.framework" -type d)" ]; then
+      rm -rf "$1"
+    fi
+  fi
+}
+
+# Don't terminate if projects or targets have spaces in the name
+OLDIFS=$IFS
+IFS=$(echo "")
+
+handleNestedFrameworks $INTERNAL_NESTED_FRAMEWORKS_DIR $MAIN_FRAMEWORKS_DIR
+
+handleNestedFrameworks $NESTED_FRAMEWORKS_DIR $MAIN_FRAMEWORKS_DIR
+
+IFS=$OLDIFS
+
+# Don't terminate if projects or targets have spaces in the name
+OLDIFS=$IFS
+IFS=$(echo "")
+
+# Delete this script if archiving
+if [ "$ACTION" = "install" ]; then
+  rm -- "$0"
+fi
+
+# Codesign
+find "${CODESIGNING_FOLDER_PATH}/Frameworks" -name "*.framework" | while read -r FILENAME; do
+  codesign --force --sign "${EXPANDED_CODE_SIGN_IDENTITY}" "$FILENAME"
+  if [ $? != 0 ]; then
+    echo "error: Code signing failed."
+    exit 1
+  fi
+done
+
+IFS=$OLDIFS
+
