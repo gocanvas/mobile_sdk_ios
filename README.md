@@ -53,7 +53,7 @@ The Swift Package Manager is a tool for automating the distribution of Swift cod
 Once you have your Swift package set up, adding GCSdk as a dependency is as easy as adding it to the dependencies value of your Package.swift or the Package list in Xcode.
 ```
 dependencies: [
-    .package(url: "https://github.com/gocanvas/mobile_sdk_ios.git", .upToNextMajor(from: "6.3.0"))
+    .package(url: "https://github.com/gocanvas/mobile_sdk_ios.git", .upToNextMajor(from: "6.3.1"))
 ]
 ```
 
@@ -100,13 +100,14 @@ After (6.3):
     "last_sheet_id": 12345,
     "status": "closed",
     "form": { "id": 4639578, "version": "1" },
-    "responses": [ ... ],
-    ...
+    "responses": [ ... ]
   }
 }
 ```
 
-The content of `data` has the same properties as the 6.2 response, plus a few submission header properties that can be ignored in Userless mode, see [Read the response](#step-5-read-the-response). The only changed value is `displayed` in `responses`, which is now a boolean (`true` / `false`) instead of the string `" true"` / `" false"`.
+The content of `data` has exactly the same properties as the 6.2 response, see [Read the response](#step-5-read-the-response). The only changed value is `displayed` in `responses`, which is now a boolean (`true` / `false`) instead of the string `" true"` / `" false"`.
+
+> **Behavior change in 6.3.1:** when `MOBILE_INTERFACE_THEME` is not set, the SDK now follows the host app's appearance (System) instead of always being Light, so on a device in Dark mode it opens in Dark. If your app supports only Light, set `MOBILE_INTERFACE_THEME` to `.light` to keep the previous look. If you set custom `gc_sdk_color_*` Color Sets, give them a Dark appearance too.
 
 ### What to change
 
@@ -222,7 +223,7 @@ Returns nothing. Call it right after creating the launcher and before showing a 
 
 | Key | Value type | Default | Used by |
 |---|---|---|---|
-| `MOBILE_INTERFACE_THEME` | `UIUserInterfaceStyle` | `.light` | both modes, see [Light & Dark mode](#light--dark-mode) |
+| `MOBILE_INTERFACE_THEME` | `UIUserInterfaceStyle` | `.unspecified` (System) | both modes, see [Light & Dark mode](#light--dark-mode) |
 | `MOBILE_LANGUAGE` | `Locale.LanguageCode` | the device language, with `English (US)` fallback | both modes, see [Multi-Language](#multi-language) |
 | `MOBILE_DOMAIN` | `String`, the GoCanvas server host (e.g. `"www.gocanvas.com"`) | the GoCanvas production server | User-based, see [Set the server](#step-2-set-the-server-optional) |
 
@@ -333,10 +334,15 @@ The two modes report errors differently:
 ### Clear data
 
 ```swift
-public func clearData()
+@discardableResult
+public func clearData() -> String
 ```
 
-Takes no parameters and returns nothing. Deletes all the data the SDK has stored on the device. It can be used in both modes and must not be called on the main thread.
+Takes no parameters. Deletes all the data the SDK has stored on the device. It can be used in both modes and must not be called on the main thread.
+
+Returns a JSON (see [Result format](#result-format)) where, on success, `data` is an empty object. The result can be ignored.
+
+Possible errors: `syncInProgress` (when a `sync` is running; nothing is deleted).
 
 ### Branding
 
@@ -362,13 +368,15 @@ By overriding these color attributes, you can easily change the style of the cus
 
 **Applying your own colors:**
 
-1. Enable the theme mode with the SDK API (default is set to `LIGHT`)
+1. Set the theme mode with the SDK API. The default is System (`.unspecified`): the SDK follows the host app's appearance, which is the device setting unless your app overrides it with `UIUserInterfaceStyle` in Info.plist or `overrideUserInterfaceStyle`. Set `.light` or `.dark` to force a mode.
 
 Call the following method after SDK config initialization:
 
 ```swift 
 formLauncher.addConfigValue(key: "MOBILE_INTERFACE_THEME", value: UIUserInterfaceStyle.dark)
 ```
+
+> **Note:** before 6.3.1 the default was Light. If your app supports only Light, set `.light` to keep the previous look. If you set custom `gc_sdk_color_*` Color Sets, give them a Dark appearance too.
 
 2. In order to use your color as the theme for the form flow, a `Color Set` must be added to any `xcasset` available in your target with the following names:
 - `gc_sdk_color_primary`
@@ -549,13 +557,7 @@ The `completion` closure receives a JSON with an `error` and a `data` property, 
   "error": null,
   "data": {
     "guid": "F4C7A1D9-8B1E-4D7F-9D5C-2D9E6B4E5A8F",
-    "name": "*** 09/24/26 10:15:02",
     "status": "closed",
-    "last_saved_at": 1727172902,
-    "dispatch_id": null,
-    "deletable": true,
-    "pendingUpload": true,
-    "rejected": false,
     "last_sheet_id": 12345,
     "form": {
       "id": 4639578,
@@ -576,8 +578,6 @@ The `completion` closure receives a JSON with an `error` and a `data` property, 
 | `last_sheet_id` | the last screen the user visited |
 | `form` | the `id` and `version` of the form |
 | `responses` | one item per entry, with its `entry_id`, entry `guid`, `label`, `value` and whether it was `displayed`. Entries inside list loops also have a `multi_key` |
-
-The remaining properties (`name`, `last_saved_at`, `dispatch_id`, `deletable`, `pendingUpload`, `rejected`) are the submission header shared with the [User-based submissions](#step-6-get-the-forms-and-submissions). In Userless mode the SDK neither stores nor uploads the submission, so they can be ignored.
 
 An `open` response can be resumed later by passing it back as [prefilled entries](#prefill-with-partially-response).
 
@@ -697,18 +697,21 @@ public class GoCanvasFormLauncher {
     /// - Parameters:
     ///   - username: the user's GoCanvas username (email)
     ///   - token: the user's OAuth token JSON, see [Obtain the user's token](#step-3-obtain-the-users-token)
-    ///   - uploadOnly: when `true`, only uploads the completed submissions
+    ///   - uploadOnly: when `true`, only uploads the submissions
+    ///   - uploadSavedSubmissions: when `true`, also uploads the saved (not completed) submissions as
+    ///     open submissions, see [Upload saved submissions](#upload-saved-submissions)
     /// - Returns: a JSON with an `error` and a `data` property. On success `data` contains the counts of
     ///   `forms_added`, `forms_removed`, `forms_retired`, `dispatches_added` and `dispatches_removed`
     ///   (empty when `uploadOnly` is `true`). See [Sync](#step-5-sync).
     ///
     /// NOTE: this must not be run on the main thread
-    public func sync(username: String, token: String, uploadOnly: Bool = false) -> String
+    public func sync(username: String, token: String, uploadOnly: Bool = false,
+                     uploadSavedSubmissions: Bool = false) -> String
 
     /// Returns the forms stored on the device, each with its submissions.
     /// - Parameter username: the synced user's username
     /// - Returns: a JSON with an `error` and a `data` property. On success `data` contains the `forms`
-    ///   array, and each form contains its `submissions` array.
+    ///   array, and each form contains its `folders` array and its `submissions` array.
     ///   See [Get the forms and submissions](#step-6-get-the-forms-and-submissions).
     ///
     /// NOTE: this must not be run on the main thread
@@ -744,19 +747,24 @@ public class GoCanvasFormLauncher {
                                prefilledEntries: String? = nil,
                                completion: @escaping (String) -> ()) async throws -> UIViewController
 
-    /// Deletes a saved submission from the device.
+    /// Deletes a saved submission from the device, and from GoCanvas when it is also there.
     /// - Parameters:
     ///   - username: the synced user's username
     ///   - guid: the `guid` of the submission, as returned by `getFormsAndSubmissions`
+    ///   - token: optional, the user's token JSON; when omitted, the stored token is used.
+    ///     See [deleteSubmission](#deletesubmission).
     /// - Returns: a JSON with an `error` and a `data` property. On success `data` contains the deleted
     ///   submission. Dispatches, handoffs and completed submissions cannot be deleted and return a
     ///   `submissionCannotBeDeleted` error.
+    ///   The same error is returned for a saved submission whose upload is in progress
+    ///   (`state: sync_in_progress`).
     ///
     /// NOTE: this must not be run on the main thread
-    public func deleteSubmission(username: String, guid: String) -> String
+    public func deleteSubmission(username: String, guid: String, token: String? = nil) -> String
 
     /// Returns `true` when any submission on the device has `pendingUpload: true`, i.e. it will be
-    /// uploaded (or finish uploading) on the next `sync`.
+    /// uploaded (or finish uploading) on the next `sync` (saved submissions: on the next `sync` with
+    /// `uploadSavedSubmissions: true`).
     ///
     /// NOTE: this must not be run on the main thread
     public func hasPendingSubmissions() -> Bool
@@ -778,7 +786,7 @@ On success, `error` is `null` and `data` contains the result of the call:
 On failure, `error` contains the error `code`, the user-facing `message` (see [User-based error codes](#user-based-error-codes)) and, when available, a `debug_message`:
 
 ```json
-{ "error": { "code": 90010, "message": "The provided token is not valid for the specified user.", "debug_message": "Token user 'john.doe@example.com' does not match 'jane.doe@example.com'" }, "data": {} }
+{ "error": { "code": 90010, "message": "The provided token is not valid for the specified user.", "debug_message": "Token is valid for 'john.doe@example.com' but sync was requested for 'jane.doe@example.com'" }, "data": {} }
 ```
 
 The `debug_message` holds developer-facing details about what failed. It is not translated and its content may change, so use it for logging only: don't show it to the user or parse it.
@@ -793,7 +801,7 @@ The `debug_message` holds developer-facing details about what failed. It is not 
 6. [Get the forms and submissions](#step-6-get-the-forms-and-submissions)
 7. [Show a form or a submission](#step-7-show-a-form-or-a-submission)
 8. [Read the result](#step-8-read-the-result)
-9. [Sync again](#step-9-sync-again) to upload the completed submissions and receive the latest changes
+9. [Sync again](#step-9-sync-again) to upload the completed (and optionally the saved) submissions and receive the latest changes
 
 ```swift
 let username = "user@company.com"
@@ -827,13 +835,13 @@ The user's OAuth token must be issued by the same server.
 
 #### Step 3: Obtain the user's token
 
-Obtain an OAuth token for the user from GoCanvas. The token is the JSON returned by the GoCanvas OAuth endpoint and must contain an `access_token` issued for the user's `username`:
+Obtain an OAuth token for the user from GoCanvas. The token is the JSON returned by the GoCanvas OAuth endpoint, issued for the user's `username`:
 
 ```json
 { "access_token": "<access_token>", "expires_in": 7200, "created_at": 1727172902 }
 ```
 
-Pass the token to `sync` as you received it. The SDK uses `created_at` and `expires_in` to detect that the token has expired; a token without both properties is never treated as expired, so the [token provider](#step-4-register-a-token-provider-optional) is only called when the server rejects a request as unauthorized.
+Pass the token to `sync` exactly as you received it. `sync` returns an `invalidToken` error when the token can't be used or has already expired. In that case the token is not stored, and an already synced user and their stored token are kept.
 
 #### Step 4: Register a token provider (optional)
 
@@ -854,24 +862,36 @@ formLauncher.setTokenProvider {
 }
 ```
 
-The provider is called when the stored token has expired, and when the server rejects a request as unauthorized, in which case the request is retried once with the new token. Please note:
+Before each request, the SDK checks whether the stored token has expired. If it has and the device is online, the SDK calls the provider and sends the request with the new token. A request the server rejects as unauthorized is not retried and returns a `networkError`.
+
+The returned token must meet the same [requirements](#step-3-obtain-the-users-token) as the token passed to `sync`, and must belong to the synced user. Otherwise it is not stored:
+
+| Returned token | Result |
+|---|---|
+| a property is missing or invalid | the request is not sent and returns `invalidToken` |
+| issued for a different user, and not expired | the request is not sent and returns `tokenUserMismatch` |
+| already expired | the request is sent with the stored token and returns `networkError` if the server rejects it as unauthorized |
+| empty string | the request is sent with the stored token |
+
+Please note:
 
 - the provider is called off the main thread and blocks the calling thread until it returns, so it must not wait on the main thread
 - it must not call the other SDK methods, but it may call `setTokenProvider(nil)` to unregister itself (e.g. when the user signs out)
-- a token issued for a different user is not used
 - the provider is shared by all launcher instances, the most recent registration wins, and it is kept after `clearData`
 
 #### Step 5: Sync
 
 ```swift
-public func sync(username: String, token: String, uploadOnly: Bool = false) -> String
+public func sync(username: String, token: String, uploadOnly: Bool = false,
+                 uploadSavedSubmissions: Bool = false) -> String
 ```
 
 | Parameter | Description |
 |---|---|
 | `username` | the user's GoCanvas username (email) |
 | `token` | the user's token JSON from [Step 3](#step-3-obtain-the-users-token) |
-| `uploadOnly` | when `true`, only uploads the completed submissions, which makes the sync faster when you don't need to refresh the forms and submissions list |
+| `uploadOnly` | when `true`, only uploads the submissions, which makes the sync faster when you don't need to refresh the forms and submissions list |
+| `uploadSavedSubmissions` | when `true`, also uploads the saved submissions, see [Upload saved submissions](#upload-saved-submissions). Defaults to `false` |
 
 `sync` uploads the completed submissions, then downloads the user's forms, reference data, dispatches and handoffs. It must not be called on the main thread.
 
@@ -881,6 +901,7 @@ public func sync(username: String, token: String, uploadOnly: Bool = false) -> S
 - A failed `sync` does not remove an already synced user.
 - The first sync of a user downloads every assigned form, which can take a while for a large account. Later syncs only download what has changed and are much faster. The call returns only when the whole sync has finished, so we recommend showing a progress UI while it runs.
 - Only one sync can run at a time; calling `sync` while another sync is running returns a `syncInProgress` error.
+- While a `sync` is running, `showForm`, `showSubmission`, `deleteSubmission` and `clearData` also return a `syncInProgress` error: nothing is opened, deleted or cleared.
 
 Returns a JSON (see [Result format](#result-format)) where, on success, `data` contains a summary of the changes:
 
@@ -912,6 +933,21 @@ When a different user is already synced on the device, `sync` returns a `differe
 
 Possible errors: `invalidToken`, `tokenUserMismatch`, `differentUser`, `networkError`, `syncFailed`, `syncInProgress`.
 
+##### Upload saved submissions
+
+By default, a submission the user saved with "Save and Close" stays on the device until it is completed. With `uploadSavedSubmissions: true`, `sync` also uploads it to GoCanvas as an open (not completed) submission, so the user can continue it later on another device or on the web:
+
+```swift
+let result = await Task.detached {
+    formLauncher.sync(username: username, token: tokenJson, uploadSavedSubmissions: true)
+}.value
+```
+
+- After the upload, the submission is downloaded back from GoCanvas and replaces the local copy. It keeps its `guid` and returns `pendingUpload: false` until the user changes it again.
+- A submission the user completes later is finalized in GoCanvas on the next `sync`, with or without `uploadSavedSubmissions`.
+- If the upload or the download fails, the submission stays on the device as it was, but locked until the next `sync` finishes uploading it (with or without `uploadSavedSubmissions`), see [Get the forms and submissions](#step-6-get-the-forms-and-submissions).
+- Saved submissions of Userless forms are never uploaded.
+
 #### Step 6: Get the forms and submissions
 
 ```swift
@@ -938,6 +974,9 @@ It must not be called on the main thread. Returns a JSON (see [Result format](#r
         "email_options": 2,
         "workflow_enabled": true,
         "image_path": "/path/to/formicons/img_987_1.png",
+        "folders": [
+          { "id": 4567, "name": "Inspections" }
+        ],
         "submissions": [
           {
             "guid": "0D1B5C2E-...",
@@ -947,6 +986,7 @@ It must not be called on the main thread. Returns a JSON (see [Result format](#r
             "dispatch_id": null,
             "deletable": true,
             "pendingUpload": false,
+            "state": "synced",
             "rejected": false
           }
         ]
@@ -970,6 +1010,7 @@ The form properties:
 | `email_options` | the form's email setting, as configured in GoCanvas |
 | `workflow_enabled` | `true` when the form is part of a workflow (its submissions can be handed off) |
 | `image_path` | the local path of the form's image |
+| `folders` | the GoCanvas folders the form belongs to, each with its `id` and `name`. Empty when the form is not in a folder. GoCanvas puts a form in at most one folder today |
 | `submissions` | the form's submissions stored on the device, see below |
 
 The form `status` can contain one of the following values:
@@ -977,10 +1018,12 @@ The form `status` can contain one of the following values:
 2. `retired` - the form has been retired or is no longer assigned; new submissions can no longer be created, but existing submissions can be opened and completed
 
 The submission `status` can contain one of the following values:
-1. `open` - the submission can still be edited: the user has elected to "Save and Close" it, or it is a dispatch or handoff not submitted yet
+1. `open` - the submission can still be edited: the user has elected to "Save and Close" it, it is a dispatch or handoff not submitted yet, or it is a saved submission downloaded from GoCanvas
 2. `closed` - the user has submitted the submission; it can no longer be edited and is waiting to be uploaded, or its media files are still uploading
 
 Once a submission and all its media files are uploaded, the submission is removed from the device and is no longer returned. If its media files do not finish uploading, it stays `closed` until a subsequent `sync` uploads them.
+
+A saved submission is locked while a `sync` uploads it. If the upload does not finish (for example, the app is closed or the connection drops), the submission stays `open` with `state` set to `sync_in_progress`: it cannot be opened or deleted, and the next `sync` finishes uploading it, with or without `uploadSavedSubmissions`.
 
 The submission properties:
 
@@ -991,8 +1034,9 @@ The submission properties:
 | `status` | `open` or `closed`, see above |
 | `last_saved_at` | when the submission was last saved, in epoch seconds, or `null` |
 | `dispatch_id` | the dispatch id when the submission is a dispatch, otherwise `null` |
-| `deletable` | whether `deleteSubmission` can delete it (dispatches, handoffs and completed submissions cannot be deleted) |
-| `pendingUpload` | `true` when the submission is `closed`, so it will be uploaded (or finish uploading) on the next `sync` |
+| `deletable` | whether `deleteSubmission` can delete it (dispatches, handoffs, completed submissions and submissions a running `sync` is uploading cannot be deleted). A saved submission left locked by an unfinished upload still reports `true`, but `deleteSubmission` returns a `submissionCannotBeDeleted` error until the next `sync` finishes uploading it |
+| `pendingUpload` | `true` when the submission is `closed`: it will be uploaded (or finish uploading) on the next `sync`. Also `true` for a saved submission that is not in GoCanvas yet or was changed since its last upload: it will be uploaded on the next `sync` with `uploadSavedSubmissions: true`, see [Upload saved submissions](#upload-saved-submissions) |
+| `state` | `sync_pending` when the submission waits for the next `sync` to upload it (a saved submission: the next `sync` with `uploadSavedSubmissions: true`), `sync_in_progress` when a `sync` started uploading it and did not finish, or `synced` when it has nothing to upload |
 | `rejected` | `true` when the submission is a handoff rejected back to the user; it then also contains the `rejector` and the `rejection_note` |
 
 Possible errors: `noSyncedUser`, `invalidUser`.
@@ -1014,7 +1058,7 @@ public func showSubmission(username: String,
 ```
 
 - `showForm` - starts a new submission for the form with the specified `formId`
-- `showSubmission` - opens the saved submission, dispatch or handoff with the specified `guid`. Only `open` submissions can be opened; a `closed` one returns a `submissionCompleted` error
+- `showSubmission` - opens the saved submission, dispatch or handoff with the specified `guid`. Only `open` submissions can be opened; a `closed` one, or a saved one whose upload is in progress (`state: sync_in_progress`), returns a `submissionCompleted` error
 
 | Parameter | Description |
 |---|---|
@@ -1027,6 +1071,8 @@ public func showSubmission(username: String,
 Returns the controller to present, see [Present the form](#present-the-form). Both methods work with the data stored by `sync`, so you don't pass a form JSON or reference data.
 
 Drawings on dispatches and handoffs are downloaded during `sync`, so they can be viewed immediately when opening the submission. Other media files are downloaded when the user taps on the field.
+
+In User-based mode, the View PDF option is not available in the form menu.
 
 If the form or submission cannot be displayed, the method throws an `NSError` and the `completion` receives the same error. The `NSError` has the `"CanvasSdkErrorDomain"` domain, its `code` is the error code and its `localizedDescription` is the error message. Since both receive the same error, you can handle all the results in the `completion` and treat the thrown error only as "nothing to present":
 
@@ -1050,7 +1096,8 @@ The possible errors are:
 - `formRetired` - when starting a new submission for a retired form
 - `invalidFormDefinition` - when the form has no sections, sheets or entries
 - `referenceDataNotSet` - when the form's reference data is not stored on the device
-- `submissionCompleted` - `showSubmission` only: when the submission is `closed` and can no longer be edited
+- `submissionCompleted` - `showSubmission` only: when the submission is `closed` and can no longer be edited, or is a saved submission whose upload is in progress (`state: sync_in_progress`)
+- `syncInProgress` - when a `sync` is running
 
 #### Step 8: Read the result
 
@@ -1067,6 +1114,7 @@ The `completion` closure receives a JSON (see [Result format](#result-format)) w
     "dispatch_id": null,
     "deletable": false,
     "pendingUpload": true,
+    "state": "sync_pending",
     "rejected": false
   }
 }
@@ -1076,24 +1124,29 @@ Unlike the [Userless](#step-5-read-the-response) result, the entries' values are
 
 #### Step 9: Sync again
 
-Call [`sync`](#step-5-sync) again to upload the completed submissions (`pendingUpload: true`) and receive the latest forms, dispatches and handoffs. Use `uploadOnly: true` to only upload them.
+Call [`sync`](#step-5-sync) again to upload the completed submissions (`pendingUpload: true`) and receive the latest forms, dispatches and handoffs. Use `uploadOnly: true` to only upload them, and `uploadSavedSubmissions: true` to also upload the saved ones (see [Upload saved submissions](#upload-saved-submissions)).
 
 ### Other calls
 
 #### deleteSubmission
 
 ```swift
-public func deleteSubmission(username: String, guid: String) -> String
+public func deleteSubmission(username: String, guid: String, token: String? = nil) -> String
 ```
 
 | Parameter | Description |
 |---|---|
 | `username` | the synced user's username |
 | `guid` | the submission `guid`, as returned by `getFormsAndSubmissions` |
+| `token` | optional, the user's token JSON, in the same format passed to `sync`, used to delete a submission that is also in GoCanvas. When omitted, the stored token is used and refreshed through the [token provider](#step-4-register-a-token-provider-optional) when it has expired |
 
-Deletes a saved submission from the device. It must not be called on the main thread. Returns a JSON (see [Result format](#result-format)) where, on success, `data` contains the deleted submission, with the same properties as in `getFormsAndSubmissions` (an empty object when no submission has that `guid`). Dispatches, handoffs and completed submissions cannot be deleted and return a `submissionCannotBeDeleted` error.
+Deletes a saved submission from the device. It must not be called on the main thread. Returns a JSON (see [Result format](#result-format)) where, on success, `data` contains the deleted submission, with the same properties as in `getFormsAndSubmissions` (an empty object when no submission has that `guid`). Dispatches, handoffs, completed submissions and saved submissions whose upload is in progress (`state: sync_in_progress`) cannot be deleted and return a `submissionCannotBeDeleted` error.
 
-Possible errors: `noSyncedUser`, `invalidUser`, `submissionCannotBeDeleted`, `invalidSavedResponse` (when the submission could not be deleted from the device).
+A saved submission that is also in GoCanvas (uploaded with `uploadSavedSubmissions`, or downloaded from GoCanvas) is deleted in GoCanvas first, then from the device, so this needs a network connection. If GoCanvas no longer has it, the delete still succeeds.
+
+When the submission is also in GoCanvas, a `token` passed in must meet the [token requirements](#step-3-obtain-the-users-token), otherwise `deleteSubmission` returns an `invalidToken` error. It must also belong to the synced user, otherwise it returns a `tokenUserMismatch` error. A valid token is stored and used by the following calls. The `token` is ignored for a submission that is on the device only.
+
+Possible errors: `noSyncedUser`, `invalidUser`, `syncInProgress` (when a `sync` is running), `submissionCannotBeDeleted`, `invalidToken`, `tokenUserMismatch`, `networkError` (when the submission could not be deleted in GoCanvas, or GoCanvas could not be reached to check the `token`), `invalidSavedResponse` (when the submission could not be deleted from the device).
 
 #### hasPendingSubmissions
 
@@ -1101,14 +1154,14 @@ Possible errors: `noSyncedUser`, `invalidUser`, `submissionCannotBeDeleted`, `in
 public func hasPendingSubmissions() -> Bool
 ```
 
-Takes no parameters and returns `true` when any submission on the device has `pendingUpload: true` (its `status` is `closed`), so it will be uploaded or finish uploading on the next `sync`. It must not be called on the main thread.
+Takes no parameters and returns `true` when any submission on the device has `pendingUpload: true`: a `closed` submission, uploaded or finishing its upload on the next `sync`, or a saved submission uploaded on the next `sync` with `uploadSavedSubmissions: true`. Saved submissions of Userless forms are never uploaded and are not counted. It must not be called on the main thread.
 
 ### Working offline
 
 Once a user is synced, a network connection is needed only for `sync` and for viewing some media files of dispatches and handoffs:
 
-- `getFormsAndSubmissions`, `showForm`, `showSubmission`, `deleteSubmission`, `hasPendingSubmissions` and `clearData` work offline, using the data stored on the device
-- completed submissions stay on the device (`pendingUpload: true`) until the next successful `sync`
+- `getFormsAndSubmissions`, `showForm`, `showSubmission`, `deleteSubmission`, `hasPendingSubmissions` and `clearData` work offline, using the data stored on the device. `deleteSubmission` needs a connection for a saved submission that is also in GoCanvas
+- completed submissions stay on the device (`pendingUpload: true`) until the next successful `sync`, and saved submissions until the next successful `sync` with `uploadSavedSubmissions: true`
 - photos, videos, signatures and attachments of dispatches and handoffs are downloaded only when the user taps on the field to view them while filling out the submission, so a network connection and a valid token are needed at that moment. Drawings are already on the device after `sync`
 
 ### User-based error codes
@@ -1122,16 +1175,16 @@ Once a user is synced, a network connection is needed only for `sync` and for vi
 | 90004 | invalidLicenseKey | when the license key provided is not valid | License key is invalid, please contact your account manager for assistance. |
 | 90005 | invalidPackageIdentifier | when the license key provided is not valid for the app's bundle identifier | Invalid package identifier, please contact your account manager for assistance. |
 | 90006 | invalidUser | when the `username` does not match the synced user | The provided username does not match the user currently synced with the SDK. |
-| 90007 | invalidToken | when the token has no `access_token` | The provided token is invalid or missing an access_token. |
-| 90008 | networkError | when a request fails or the server rejects it | A network error occurred, please try again. |
+| 90007 | invalidToken | when the token passed to `sync` or `deleteSubmission` is invalid or has expired, or the token returned by the token provider is invalid | The provided token is invalid or missing an access_token. |
+| 90008 | networkError | when a request fails or the server rejects it, including as unauthorized | A network error occurred, please try again. |
 | 90009 | syncFailed | when the sync fails for any other reason | Unable to complete sync, please try again. |
-| 90010 | tokenUserMismatch | when the token belongs to a different user than `username` | The provided token is not valid for the specified user. |
+| 90010 | tokenUserMismatch | when the token passed to `sync` or `deleteSubmission`, or the unexpired token returned by the token provider, belongs to a different user than the one requested or synced, including the same username on a different server | The provided token is not valid for the specified user. |
 | 90011 | differentUser | when another user is already synced on the device | A different user is already synced. Clear data before syncing a new user. |
 | 90012 | noSyncedUser | when a call needs a synced user and none is synced yet | You must have a synced user first. |
 | 90013 | formRetired | when starting a new submission for a retired form | This form has been retired and can no longer be used. |
-| 90014 | syncInProgress | when `sync` is called while another sync is running | A sync is already in progress. |
-| 90015 | submissionCannotBeDeleted | when the submission is a dispatch, a handoff or waiting to upload | This submission cannot be deleted and needs to be unassigned. |
-| 90016 | submissionCompleted | when `showSubmission` is called for a `closed` submission | This submission has been completed and can no longer be edited. |
+| 90014 | syncInProgress | when `sync` is called while another sync is running, or `showForm`, `showSubmission`, `deleteSubmission` or `clearData` is called while a sync is running | A sync is already in progress. |
+| 90015 | submissionCannotBeDeleted | when the submission is a dispatch, a handoff, waiting to upload, or a saved submission whose upload is in progress | This submission cannot be deleted and needs to be unassigned. |
+| 90016 | submissionCompleted | when `showSubmission` is called for a `closed` submission or a saved submission whose upload is in progress | This submission has been completed and can no longer be edited. |
 | 90017 | userModeConflict | when the Userless `formFlowController` is called for a form that is already synced for the user, or that uses reference data already synced for the user | Unable to show form. |
 
 In Userless mode, `userModeConflict` is thrown as `FormLauncherError.userModeConflictError`.
